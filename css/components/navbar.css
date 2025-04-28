@@ -22,7 +22,7 @@
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 3.5rem;
 }
 
 /* Right section styles */
@@ -38,7 +38,7 @@
   align-items: center;
   gap: 0.5rem;
   font-weight: 700;
-  font-size: var(--fs-lg);
+  font-size: var(--fs-3xl);
   color: var(--clr-text);
 }
 
@@ -56,7 +56,7 @@
 
 .nav-list {
   display: flex;
-  gap: 1.5rem;
+  gap: 2.5rem;
   margin: 0;
   padding: 0;
   list-style: none;
