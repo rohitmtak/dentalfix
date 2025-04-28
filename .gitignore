@@ -1,0 +1,25 @@
+# Ignore all image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.ico
+*.webp
+*.tiff
+*.tif
+
+
+.cursor/
+.editorconfig
+.vscode/
+test.css
+test.html
+test.js
+.prettierrc.json
+
+# Ignore image directories
+assets/
+images/
+**/images/
