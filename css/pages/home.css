@@ -68,6 +68,7 @@
   position: relative;
   background: var(--clr-bg);
   overflow: hidden;
+  margin-bottom: 3.75rem;
 }
 
 .hero-text-section {
@@ -243,7 +244,7 @@
 
 /* headline & sub-headline */
 .serenity-head {
-  font-size: clamp(2rem, 5vw + 1rem, 4.5rem);
+  font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
   line-height: 1.15;
   color: var(--clr-brown);
   max-width: 35ch;
@@ -378,7 +379,6 @@
 
 /* ===== SERVICES SECTION ===== */
 .services {
-  padding-block: var(--spacing-2xl);
   background: var(--clr-bg-dark);
   color: var(--clr-white);
 }
@@ -392,7 +392,7 @@
 
 .services-title {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: var(--fw-bold);
+  font-weight: 500;
   line-height: 1.1;
   margin-bottom: var(--spacing-lg);
 }
@@ -402,6 +402,7 @@
   font-weight: var(--fw-medium);
   text-decoration: none;
   transition: opacity var(--trans-fast);
+  font-size: var(--fs-xl);
 }
 
 .services-view-all:hover {
@@ -424,13 +425,32 @@
   background-position: center;
 }
 
+.services-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  transition: background 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.services-card:hover::after {
+  background-color: rgba(0, 75, 96, 0.75);
+}
+
 .services-card::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg,
+  /* background: linear-gradient(180deg,
       rgba(0, 0, 0, .15) 0%,
-      rgba(0, 0, 0, .45) 90%);
+      rgba(0, 0, 0, .45) 90%); */
+  
+  background-color: rgba(0, 0, 0, .5);
+  
+  z-index: 1;
+  pointer-events: none;
 }
 
 .services-content {
@@ -440,22 +460,25 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  z-index: 3;
 }
 
 .services-category {
-  font-size: var(--fs-xs);
+  font-size: var(--fs-base);
   font-weight: var(--fw-semibold);
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+  color: var(--clr-bg);
+  z-index: 3;
 }
 
 .services-card-title {
-  font-size: var(--fs-xl);
-  line-height: var(--lh-tight);
+  font-size: var(--fs-4xl);
+  line-height: 1;
   font-weight: var(--fw-bold);
   margin-bottom: var(--spacing-sm);
-  color: var(--clr-white);
+  color: var(--clr-bg);
 }
 
 .services-card-btn {
@@ -464,16 +487,19 @@
   left: var(--spacing-lg);
   padding: var(--spacing-xs) var(--spacing-md);
   font-size: var(--fs-sm);
-  font-weight: var(--fw-semibold);
-  border: 2px solid var(--clr-white);
-  border-radius: var(--radius);
-  color: var(--clr-white);
+  font-weight: 500;
+  border: 1px solid var(--clr-bg);
+  border-radius: var(--radius-sm);
+  color: var(--clr-bg);
   text-decoration: none;
   transition: background var(--trans-fast);
+  background-color: rgba(255, 255, 255, 0.15);
+  z-index: 3;
 }
 
 .services-card-btn:hover {
-  background: rgba(255, 255, 255, .15);
+  background: rgba(255, 255, 255, 1);
+  color: var(--clr-text);
 }
 
 /* Responsive adjustments */
@@ -573,7 +599,6 @@
 .doctor-hero {
   background: var(--doctor-bg);
   color: #1b1e1f;
-  padding-block: 4rem;
 }
 
 /* layout */
@@ -609,7 +634,7 @@
   font-size: 1rem;
   line-height: 1.75;
   color: #1b1e1f;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   max-width: 55ch;
 }
 
@@ -620,10 +645,8 @@
 
 /* portrait */
 .doctor-portrait {
-  border-radius: 2rem;
   overflow: hidden;
   width: 100%;
-  max-width: 600px;
 }
 
 .portrait-img {
@@ -631,6 +654,9 @@
   height: auto;
   object-fit: cover;
   display: block;
+  max-width: 650px;
+  border-radius: 2rem;
+  margin-inline: auto;
 }
 
 /* mobile tweaks */
@@ -684,17 +710,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 68px;
+  width: 48px;
   height: 48px;
   background-color: var(--clr-black-alpha);
   border: none;
-  border-radius: var(--radius);
+  border-radius: var(--radius-xl);
   cursor: pointer;
   transition: background-color var(--trans-fast);
 }
 
-.play-button:hover {
-  background-color: var(--clr-primary);
+.play-button > img {
+  height: 48px;
+  width: 48px;
 }
 
 .play-icon {
@@ -923,7 +950,7 @@
 
 /* >>>>>>>>>>>>>> Image Marquee <<<<<<<<<<<<<< */
 
-/* .marquee {
+.marquee {
   overflow: hidden;
   padding: 3rem 0;
 }
@@ -949,5 +976,5 @@
   height: 240px;
   border-radius: 2rem;
   object-fit: cover;
-} */
+}
 
