@@ -1,7 +1,7 @@
 /* Review Plain Carousel Styles */
-.review-plain {
+/* .review-plain {
   padding: 3rem 0;
-}
+} */
 
 .review-title {
   font-size: clamp(2rem, 4vw, 2.8rem);
@@ -26,7 +26,7 @@
 
 .review-plain-track {
   display: flex;
-  gap: 3rem;
+  gap: 8%;
   transition: transform 0.5s cubic-bezier(.4,0,.2,1);
   will-change: transform;
 }
@@ -34,7 +34,7 @@
 .review-plain-col {
   flex: 1 1 0;
   min-width: 0;
-  max-width: 50%;
+  max-width: 45%;
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
@@ -71,7 +71,7 @@
 }
 
 .review-logo {
-  width: 70px;
+  width: 90px;
   margin-left: auto;
 }
 
