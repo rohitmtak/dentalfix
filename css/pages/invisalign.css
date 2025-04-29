@@ -302,49 +302,69 @@
 ===================================================================== */
 
 .process-heading {
-  font-family: 'DM Serif Display', serif;
-  font-size: var(--fs-700, 2rem);
+  font-size: var(--fs-700, 3rem);
 }
 
 .carousel-wrapper {
   overflow-x: auto;
 }
 
-.process-carousel {
+.process-steps {
   display: flex;
-  gap: var(--spacing-lg);
+  /* gap: var(--spacing-xs); */
   scroll-snap-type: x mandatory;
   padding-block: var(--spacing-lg);
+  width: 100%;
+  position: relative;
 }
 
-.process-step {
-  flex: 0 0 280px;
+.step {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 20%;
   border-radius: var(--radius-md);
-  border: 1px solid var(--clr-border);
-  background: #fff;
-  padding: var(--spacing-lg);
+  padding: var(--spacing-sm);
   scroll-snap-align: center;
-  box-shadow: 0 8px 20px rgb(0 0 0 / .04);
   transition: transform var(--trans-fast);
+  position: relative;
 }
 
-.process-step:hover {
+.step:hover {
   transform: translateY(-4px);
 }
 
-.step-number {
+/* .step:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80%;
+  background-color: var(--clr-text);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: transform var(--trans-fast);
+} */
+
+.step-num {
   color: var(--clr-primary);
   font-weight: 600;
+  font-size: var(--fs-lg);
 }
 
 .step-title {
+  flex: 0 0 80px;
   font-weight: 600;
   color: var(--clr-text);
   margin-block: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--fs-3xl);
+  line-height: 1.2;
 }
 
 .step-text {
-  font-size: var(--fs-sm);
+  flex-grow: 1;
+  font-size: var(--fs-md);
+  padding-top: 1rem;
+  border-top: 1px solid black;
 }
 
 /* =====================================================================
@@ -362,6 +382,15 @@
   background: #fff;
   border-radius: var(--radius-lg);
   box-shadow: 0 12px 28px rgb(0 0 0 / .06);
+}
+
+.commitment-heading {
+  font-size: var(--fs-4xl);
+}
+
+.commitment-text {
+  max-width: 1200px;
+  margin-bottom: var(--spacing-sm);
 }
 
 /* =====================================================================
@@ -386,7 +415,7 @@
   grid-template-rows: repeat(2, 1fr);
   background: #fff;
   border-radius: 1.5rem;
-  margin: 0 auto;
+  margin: 3rem auto;
   max-width: 90vw;
   padding: 2.5rem 1.5rem; 
   position: relative;
