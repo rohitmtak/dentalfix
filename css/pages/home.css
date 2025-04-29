@@ -243,6 +243,11 @@
 
 
 /* headline & sub-headline */
+.serenity {
+  background: #ECE6DA;
+}
+
+
 .serenity-head {
   font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
   line-height: 1.15;
