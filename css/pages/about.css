@@ -39,7 +39,7 @@
     object-fit: cover;
     border-radius: var(--radius-xl);
     box-shadow: 0 8px 40px rgba(0,0,0,0.10);
-    background: #f3f7f9;
+    background: #FFFFFF;
     display: block;
 }
 
@@ -63,7 +63,7 @@
 
 .about-hero-desc {
     font-size: clamp(1.1rem, 1.5vw + 0.5rem, 1.35rem);
-    color: var(--clr-grey);
+    color: var(--clr-text-secondary);
     margin: 0;
     max-width: 520px;
 }
@@ -101,7 +101,7 @@
 
 .story-desc {
     font-size: 1.18rem;
-    color: var(--clr-grey);
+    color: var(--clr-text-secondary);
     margin-bottom: 2rem;
     /* max-width: 600px; */
     line-height: 1.6;
@@ -117,7 +117,7 @@
 .story-img {
     display: block;
     object-fit: cover;
-    background: #f3f7f9;
+    background: #FFFFFF;
     border-radius: var(--radius-xl);
 }
 
@@ -204,21 +204,21 @@
     height: 70px;
     object-fit: contain;
     opacity: 0.7;
-    color: var(--clr-primary);
-    fill: var(--clr-primary);
+    color: var(--clr-bg-btn);
+    fill: var(--clr-bg-btn);
 }
 
 .value-title {
     font-family: var(--ff-base);
     font-size: 2rem;
     font-weight: 700;
-    color: var(--clr-primary);
+    color: var(--clr-bg-btn);
     margin-bottom: 0.5rem;
 }
 
 .value-desc {
     font-size: 1.1rem;
-    color: var(--clr-grey);
+    color: var(--clr-text-secondary);
     line-height: 1.7;
     max-width: 520px;
 }
@@ -533,7 +533,7 @@
 .services-highlight-desc {
     font-family: var(--ff-base);
     font-size: 1.18rem;
-    color: var(--clr-grey);
+    color: var(--clr-text-secondary);
     line-height: 1.6;
     margin: 0 auto;
     max-width: 420px;

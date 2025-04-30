@@ -25,7 +25,7 @@
 }
 
 .footer-logo p {
-  color: var(--clr-grey);
+  color: var(--clr-text-secondary);
   font-size: var(--fs-sm);
 }
 
@@ -42,7 +42,7 @@
 
 .subscribe-input {
   padding: var(--spacing-sm);
-  border: 1px solid var(--clr-grey-light);
+  border: 1px solid var(--clr-text-secondary-light);
   border-radius: var(--radius-sm);
   font-size: var(--fs-sm);
 }
@@ -59,7 +59,7 @@
 }
 
 .subscribe-btn:hover {
-  background: var(--clr-primary);
+  background: var(--clr-bg-btn);
 }
 
 .footer-col h4 {
@@ -78,21 +78,21 @@
 }
 
 .footer-col ul li a {
-  color: var(--clr-grey);
+  color: var(--clr-text-secondary);
   text-decoration: none;
   transition: color var(--trans-fast);
   font-size: var(--fs-sm);
 }
 
 .footer-col ul li a:hover {
-  color: var(--clr-primary);
+  color: var(--clr-bg-btn);
 }
 
 .contact-info li {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
-  color: var(--clr-grey);
+  color: var(--clr-text-secondary);
   font-size: var(--fs-sm);
 }
 
@@ -115,7 +115,7 @@
 }
 
 .social-icons a:hover {
-  background: var(--clr-primary);
+  background: var(--clr-bg-btn);
 }
 
 .footer-bottom {
@@ -127,7 +127,7 @@
 }
 
 .footer-bottom p {
-  color: var(--clr-grey);
+  color: var(--clr-text-secondary);
   font-size: var(--fs-sm);
 }
 
@@ -137,14 +137,14 @@
 }
 
 .footer-bottom-links a {
-  color: var(--clr-grey);
+  color: var(--clr-text-secondary);
   text-decoration: none;
   font-size: var(--fs-sm);
   transition: color var(--trans-fast);
 }
 
 .footer-bottom-links a:hover {
-  color: var(--clr-primary);
+  color: var(--clr-bg-btn);
 }
 
 @media (max-width: 1024px) {

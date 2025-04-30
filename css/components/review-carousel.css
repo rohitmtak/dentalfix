@@ -122,7 +122,7 @@
 
 .review-dot.active,
 .review-dot:hover {
-  background: var(--clr-primary);
+  background: var(--clr-bg-btn);
   transform: scale(1.2);
 }
 
@@ -147,9 +147,9 @@
 }
 
 .review-arrow:hover {
-  background: var(--clr-primary);
+  background: var(--clr-bg-btn);
   color: var(--clr-white);
-  border-color: var(--clr-primary);
+  border-color: var(--clr-bg-btn);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
