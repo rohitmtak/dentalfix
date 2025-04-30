@@ -94,6 +94,9 @@ a {
 
 .layout-wrapper {
   border-radius: .75rem;
+}
+
+.overflow-hidden {
   overflow: hidden;
 }
 
