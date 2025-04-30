@@ -419,7 +419,7 @@
   max-width: 90vw;
   padding: 2.5rem 1.5rem; 
   position: relative;
-  gap: 2.5rem 0;
+  gap: 3.5rem 0;
 }
 
 .before-after-cell {
@@ -428,8 +428,10 @@
   align-items: center;
   justify-content: center;
   min-width: 120px;
+  max-width: 300px;
   min-height: 120px;
   padding: 0 1rem;
+  margin-inline: auto;
 }
 
 .ba-img {
