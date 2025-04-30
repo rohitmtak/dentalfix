@@ -154,7 +154,7 @@
 }
 
 .why-invisalign-card {
-  background: var(--clr-bg-alt);
+  background: var(--clr-bg-secondary);
   border: 2px solid var(--clr-border);
   border-radius: var(--radius-lg);
   padding: var(--spacing-xl) var(--spacing-lg);
@@ -174,7 +174,7 @@
 .why-invisalign-card:hover {
   transform: translateY(-6px) scale(1.025);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.10);
-  border-color: var(--clr-primary);
+  border-color: var(--clr-bg-btn);
 }
 
 .why-invisalign-icon {
@@ -293,7 +293,7 @@
 .expertise-dot {
   width: 14px;
   height: 14px;
-  background: var(--clr-primary);
+  background: var(--clr-bg-btn);
   border-radius: 50%;
 }
 
@@ -346,7 +346,7 @@
 } */
 
 .step-num {
-  color: var(--clr-primary);
+  color: var(--clr-bg-btn);
   font-weight: 600;
   font-size: var(--fs-lg);
 }

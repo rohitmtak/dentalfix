@@ -71,7 +71,7 @@
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--clr-primary);
+  color: var(--clr-bg-btn);
 }
 
 .nav-link.active::after {
@@ -81,7 +81,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: var(--clr-primary);
+  background: var(--clr-bg-btn);
 }
 
 /* Dropdown indicator */

@@ -5,14 +5,12 @@
 /* ========== CUSTOM PROPERTIES (VARIABLES) ========== */
 :root {
   /* Colors */
-  --clr-primary: #D4AF37;
-  --clr-primary-dark: #B38E2E;
-  --clr-secondary: #004b60;
-  --clr-bg:	#ebe9e5;
-  --clr-bg-alt: #f3f7f9;
-  --clr-text: #111;
-  --clr-grey: #666;
-  --clr-grey-light: #8f9b9b;
+  --clr-bg-btn: #D4AF37;
+  --clr-bg-btn-hover: #B38E2E;
+  --clr-bg:	#F9F6EE;
+  --clr-bg-secondary: #FFFFFF;
+  --clr-text-primary: #111;
+  --clr-text-secondary: #666;
   --clr-border: rgba(0, 0, 0, 0.1);
 
   /* Typography */
@@ -20,11 +18,12 @@
              'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --fs-sm: 0.875rem;
   --fs-base: 1rem;
+  --fs-2xl: 1.5rem;
   --fs-lg: 1.125rem;
   --fs-xl: 1.25rem;
-  --fs-2xl: 1.5rem;
   --fs-3xl: 2rem;
   --fs-4xl: 2.5rem;
+  --fs-5xl: 3rem;
   
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -32,8 +31,7 @@
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 2.5rem;
-  /* --spacing-2xl: 4rem; */
-  --spacing-2xl: 5rem;
+  --spacing-2xl: 4rem;
   
   /* Layout */
   --container-width: 1200px;
@@ -87,7 +85,7 @@ a {
 }
 
 .section {
-  padding-block: 3.75rem;
+  padding-block: var(--spacing-2xl);
 }
 
 /* Grid System */
@@ -98,8 +96,8 @@ a {
 
 /* ========== TYPOGRAPHY UTILITIES ========== */
 .text-center { text-align: center; }
-.text-primary { color: var(--clr-primary); }
-.text-grey { color: var(--clr-grey); }
+.text-primary { color: var(--clr-bg-btn); }
+.text-grey { color: var(--clr-text-secondary); }
 
 /* Heading Scale */
 .heading-xl {
@@ -154,7 +152,7 @@ a {
 /* Page hero */
 .page-hero {
   padding: 4rem 0;
-  background-color: var(--clr-bg-alt);
+  background-color: var(--clr-bg-secondary);
   text-align: center;
 }
 
@@ -242,12 +240,12 @@ a {
   border-radius: var(--radius-xl);
   cursor: pointer;
   transition: all var(--trans-fast);
-  background-color: var(--clr-primary);
+  background-color: var(--clr-bg-btn);
   color: var(--clr-bg);
 }
 
 .btn:hover {
-  background-color: var(--clr-primary-dark);
+  background-color: var(--clr-bg-btn-hover);
   transform: translateY(-2px);
 }
 
@@ -266,12 +264,12 @@ a {
 
 .btn-outline {
   background-color: transparent;
-  border: 2px solid var(--clr-primary);
-  color: var(--clr-primary);
+  border: 2px solid var(--clr-bg-btn);
+  color: var(--clr-bg-btn);
 }
 
 .btn-outline:hover {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-bg-btn);
   color: var(--clr-bg);
 }
 
@@ -306,5 +304,5 @@ a {
 }
 
 .bg-alt {
-  background: var(--clr-bg-alt);
+  background: var(--clr-bg-secondary);
 } 
