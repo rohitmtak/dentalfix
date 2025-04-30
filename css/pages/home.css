@@ -244,14 +244,14 @@
 
 /* headline & sub-headline */
 .serenity {
-  background: #ECE6DA;
+  background: #FFFFFF;
 }
 
 
 .serenity-head {
   font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
   line-height: 1.15;
-  color: var(--clr-brown);
+  color: var(--clr-text);
   max-width: 35ch;
   margin-inline: auto;
   margin-bottom: 2rem;
@@ -292,7 +292,7 @@
   padding: 4rem 4rem;
   border: 2px solid rgba(92, 63, 56, .45);
   border-radius: 1.25rem;
-  background: #fff;
+  background: var(--clr-bg);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
   will-change: transform, filter;
   transform-origin: center center;
@@ -336,14 +336,14 @@
   font-size: var(--fs-4xl);
   font-weight: 500;
   line-height: 1.25;
-  color: var(--clr-primary);
+  color: var(--clr-text);
   margin-bottom: 1.25rem;
 }
 
 .card-text {
   font-size: var(--fs-lg);
   line-height: 1.75;
-  color: var(--clr-text);
+  color: #0009;
 }
 
 /* Mobile styles */
@@ -533,6 +533,10 @@
 
 
 /* ===== DOC SECTION ===== */
+.doc-section {
+  background: #FFFFFF;
+}
+
 .doc-intro {
   font-size: var(--fs-sm);
   font-weight: 600;
@@ -598,7 +602,7 @@
 
 /* ===== DOCTOR HERO ===== */
 :root {
-  --doctor-bg: #F9F6EE;
+  --doctor-bg: #FFFFFF;
 }
 
 .doctor-hero {
@@ -682,9 +686,49 @@
 
 
 
+/* >>>>>>>>>>>>>> Testimonials <<<<<<<<<<<<<< */
+
+.rating {
+  padding-block: 5rem;
+}
+
+.rating-container {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.rating-container>h3 {
+  text-align: center;
+  font-size: var(--fs-4xl);
+  margin-bottom: 3rem;
+}
+
+.rating-stars {
+  width: fit-content;
+  margin: 0 auto 3rem;
+}
+
+.rating-stars>span>i {
+  font-size: 32px;
+}
+
+.rating-text {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+
+
 
 
 /* >>>>>>>>>>>>>> Video Section <<<<<<<<<<<<<< */
+
+.video {
+  background: #FFFFFF;
+}
+
 
 .video-section {
   max-width: var(--container);
@@ -816,40 +860,6 @@
 }
 
 
-/* >>>>>>>>>>>>>> Testimonials <<<<<<<<<<<<<< */
-
-.rating {
-  padding-block: 5rem;
-}
-
-.rating-container {
-  width: 100%;
-  max-width: 620px;
-  margin: 0 auto;
-  height: 100%;
-}
-
-.rating-container>h3 {
-  text-align: center;
-  font-size: var(--fs-4xl);
-  margin-bottom: 3rem;
-}
-
-.rating-stars {
-  width: fit-content;
-  margin: 0 auto 3rem;
-}
-
-.rating-stars>span>i {
-  font-size: 32px;
-}
-
-.rating-text {
-  width: fit-content;
-  margin-inline: auto;
-}
-
-
 
 /* ===== CTA BANNER SECTION ===== */
 .cta-banner {
@@ -954,6 +964,9 @@
 }
 
 /* >>>>>>>>>>>>>> Image Marquee <<<<<<<<<<<<<< */
+.marquee {
+  background: #FFFFFF;
+}
 
 .marquee {
   overflow: hidden;
