@@ -93,8 +93,8 @@ a {
 }
 
 .layout-wrapper {
-  border-color: transparent;
   border-radius: .75rem;
+  overflow: hidden;
 }
 
 /* Grid System */

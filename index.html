@@ -390,50 +390,54 @@
 
 
         <!-- ========== Video ========== -->
-        <section class="video section">
-            <div class="container">
-                <div class="video-section">
-                    <div class="video-wrapper">
-                        <img src="assets/images/videothumb.png" alt="Video thumbnail" class="video-thumbnail">
-                        <button class="play-button" onclick="loadVideo(this)" data-video-id="NcvXV_Ss2Po"
-                            aria-label="Play video">
-                            <!-- <svg class="play-icon" viewBox="0 0 24 24">
+        <div class="layout-pad-box">
+            <div class="layout-wrapper">
+                <section class="video section">
+                    <div class="container">
+                        <div class="video-section">
+                            <div class="video-wrapper">
+                                <img src="assets/images/videothumb.png" alt="Video thumbnail" class="video-thumbnail">
+                                <button class="play-button" onclick="loadVideo(this)" data-video-id="NcvXV_Ss2Po"
+                                    aria-label="Play video">
+                                    <!-- <svg class="play-icon" viewBox="0 0 24 24">
                                 <path d="M8 5v14l11-7z" />
                             </svg> -->
-                            <img src="assets/images/play-btn.svg" alt="Play button" class="play-icon">
-                        </button>
+                                    <img src="assets/images/play-btn.svg" alt="Play button" class="play-icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="video-popup" id="videoPopup">
+                    <div class="video-popup-content">
+                        <button class="close-popup" onclick="closeVideo()" aria-label="Close video">×</button>
+                        <div class="popup-video-wrapper"></div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <div class="video-popup" id="videoPopup">
-            <div class="video-popup-content">
-                <button class="close-popup" onclick="closeVideo()" aria-label="Close video">×</button>
-                <div class="popup-video-wrapper"></div>
+                <!-- ========== IMAGE MARQUEE ========== -->
+                <section class="marquee">
+                    <div class="marquee-track">
+                        <!-- original set -->
+                        <img src="assets/images/marquee/img1.webp" alt="" class="marq">
+                        <img src="assets/images/marquee/img2.webp" alt="" class="marq">
+                        <img src="assets/images/marquee/img3.webp" alt="" class="marq">
+                        <img src="assets/images/marquee/img4.webp" alt="" class="marq">
+                        <img src="assets/images/marquee/img5.webp" alt="" class="marq">
+                        <img src="assets/images/marquee/img6.webp" alt="" class="marq">
+
+                        <!-- clones (aria-hidden so screen readers ignore them) -->
+                        <img src="assets/images/marquee/img1.webp" alt="" class="marq" aria-hidden="true">
+                        <img src="assets/images/marquee/img2.webp" alt="" class="marq" aria-hidden="true">
+                        <img src="assets/images/marquee/img3.webp" alt="" class="marq" aria-hidden="true">
+                        <img src="assets/images/marquee/img4.webp" alt="" class="marq" aria-hidden="true">
+                        <img src="assets/images/marquee/img5.webp" alt="" class="marq" aria-hidden="true">
+                        <img src="assets/images/marquee/img6.webp" alt="" class="marq" aria-hidden="true">
+                    </div>
+                </section>
             </div>
         </div>
-
-        <!-- ========== IMAGE MARQUEE ========== -->
-        <section class="marquee">
-            <div class="marquee-track">
-                <!-- original set -->
-                <img src="assets/images/marquee/img1.webp" alt="" class="marq">
-                <img src="assets/images/marquee/img2.webp" alt="" class="marq">
-                <img src="assets/images/marquee/img3.webp" alt="" class="marq">
-                <img src="assets/images/marquee/img4.webp" alt="" class="marq">
-                <img src="assets/images/marquee/img5.webp" alt="" class="marq">
-                <img src="assets/images/marquee/img6.webp" alt="" class="marq">
-
-                <!-- clones (aria-hidden so screen readers ignore them) -->
-                <img src="assets/images/marquee/img1.webp" alt="" class="marq" aria-hidden="true">
-                <img src="assets/images/marquee/img2.webp" alt="" class="marq" aria-hidden="true">
-                <img src="assets/images/marquee/img3.webp" alt="" class="marq" aria-hidden="true">
-                <img src="assets/images/marquee/img4.webp" alt="" class="marq" aria-hidden="true">
-                <img src="assets/images/marquee/img5.webp" alt="" class="marq" aria-hidden="true">
-                <img src="assets/images/marquee/img6.webp" alt="" class="marq" aria-hidden="true">
-            </div>
-        </section>
 
         <!-- ========== CTA SECTION ========== -->
         <!-- <section class="cta-banner">
