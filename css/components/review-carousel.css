@@ -1,7 +1,7 @@
 /* Review Plain Carousel Styles */
 .review-plain {
-  background: #ECE6DA;
-  padding: var(--spacing-2xl) 0;
+  background: #ebe9e5;
+  padding: var(--spacing-2xl);
 }
 
 .review-title {
@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-  background: var(--clr-white);
+  background: #FFFFFF;
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
