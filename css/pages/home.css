@@ -72,8 +72,8 @@
 .hero-text-section {
   flex: 1;
   display: flex;
-  /* align-items: center; */
-  padding: var(--spacing-2xl);
+  align-items: center;
+  padding: var(--spacing-2xl) 5rem;
   position: relative;
   z-index: 2;
 }
@@ -83,8 +83,8 @@
 }
 
 .hero-carousel-text h1 {
-  font-size: clamp(2.75rem, 8vw, 5rem);
-  font-weight: 800;
+  font-size: clamp(2.75rem, 8vw, 4.25rem);
+  font-weight: 600;
   margin-bottom: 1.75rem;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -92,12 +92,11 @@
 }
 
 .hero-carousel-text p {
-  font-size: clamp(1.125rem, 4vw, 1.5rem);
+  font-size: clamp(1.125rem, 4vw, 1.25rem);
   line-height: 1.5;
   margin-bottom: 2rem;
   color: var(--clr-text);
   opacity: 0.85;
-  font-weight: 500;
 }
 
 .hero-buttons {
@@ -247,13 +246,14 @@
 
 
 .serenity-head {
-  font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+  font-size: clamp(2rem, 5vw + 1rem, 3rem);
   line-height: 1.15;
   color: var(--clr-text);
   max-width: 35ch;
   margin-inline: auto;
   margin-bottom: 2rem;
   text-align: center;
+  font-weight: 500;
 }
 
 .serenity-sub {
@@ -331,7 +331,7 @@
 
 /* copy block */
 .card-title {
-  font-size: var(--fs-4xl);
+  font-size: var(--fs-3xl);
   font-weight: 500;
   line-height: 1.25;
   color: var(--clr-text);
@@ -394,7 +394,7 @@
 }
 
 .services-title {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(2.5rem, 5vw, 3rem);
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: var(--spacing-lg);
@@ -531,80 +531,8 @@
 
 
 /* ===== DOC SECTION ===== */
-.doc-section {
-  background: #FFFFFF;
-}
-
-.doc-intro {
-  font-size: var(--fs-sm);
-  font-weight: 600;
-  letter-spacing: .15em;
-  color: var(--clr-text-secondary);
-  margin-bottom: var(--spacing-xs);
-}
-
-.doc-title {
-  font-size: var(--fs-4xl);
-  font-weight: var(--fw-bold);
-  line-height: var(--lh-tight);
-  margin-bottom: var(--spacing-2xl);
-}
-
-/* Meet Out Team Section Start */
-.doc-flex {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: var(--spacing-xl);
-}
-
-.doc-member-flex {
-  display: flex;
-  width: 55%;
-  gap: var(--spacing-lg);
-}
-
-.doc-member>img {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  max-height: 550px;
-  object-fit: cover;
-  object-position: top;
-}
-
-.doc-member-desc>* {
-  margin-bottom: var(--spacing-sm);
-}
-
-.doc-member-desc {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.doc-member-desc p {
-  color: var(--clr-text-secondary);
-  line-height: 1.6;
-}
-
-.team-member-desc>p {
-  width: 90%;
-}
-
-
-
-
-
-/* ===== DOCTOR HERO ===== */
-:root {
-  --doctor-bg: #FFFFFF;
-}
-
 .doctor-hero {
-  background: var(--doctor-bg);
+  background: var(--clr-bg-secondary);
   color: #1b1e1f;
 }
 
@@ -630,7 +558,7 @@
 }
 
 .doctor-title {
-  font-size: clamp(2.25rem, 4vw + 1rem, 3.75rem);
+  font-size: clamp(2.25rem, 4vw + 1rem, 3rem);
   line-height: 1.15;
   font-weight: 600;
   margin-bottom: 2.5rem;

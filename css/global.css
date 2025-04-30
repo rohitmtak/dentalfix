@@ -88,6 +88,15 @@ a {
   padding-block: var(--spacing-2xl);
 }
 
+.layout-pad-box {
+  padding: .75rem .75rem 0;
+}
+
+.layout-wrapper {
+  border-color: transparent;
+  border-radius: .75rem;
+}
+
 /* Grid System */
 .grid {
   display: grid;

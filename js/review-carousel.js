@@ -20,7 +20,7 @@
     const colsPerSlide = getColsPerSlide();
     cols.forEach(col => {
       col.style.flex = `0 0 ${100 / colsPerSlide}%`;
-      col.style.maxWidth = `${100 / colsPerSlide - 8}%`;
+      col.style.maxWidth = `${100 / colsPerSlide - 5}%`;
     });
     track.style.width = '100%';
   }
