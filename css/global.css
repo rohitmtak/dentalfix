@@ -1,21 +1,21 @@
 /* global.css */
-@import url('./components/navbar.css');
-@import url('./components/footer.css');
+@import url("./components/navbar.css");
+@import url("./components/footer.css");
 
 /* ========== CUSTOM PROPERTIES (VARIABLES) ========== */
 :root {
   /* Colors */
-  --clr-bg-btn: #D4AF37;
-  --clr-bg-btn-hover: #B38E2E;
-  --clr-bg:	#F9F6EE;
-  --clr-bg-secondary: #FFFFFF;
+  --clr-bg-btn: #d4af37;
+  --clr-bg-btn-hover: #b38e2e;
+  --clr-bg: #f9f6ee;
+  --clr-bg-secondary: #ffffff;
   --clr-text-primary: #111;
   --clr-text-secondary: #666;
   --clr-border: rgba(0, 0, 0, 0.1);
 
   /* Typography */
-  --ff-base: 'Rethink Sans', -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --ff-base: "Rethink Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   --fs-sm: 0.875rem;
   --fs-base: 1rem;
   --fs-2xl: 1.5rem;
@@ -24,7 +24,7 @@
   --fs-3xl: 2rem;
   --fs-4xl: 2.5rem;
   --fs-5xl: 3rem;
-  
+
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -32,17 +32,17 @@
   --spacing-lg: 2rem;
   --spacing-xl: 2.5rem;
   --spacing-2xl: 4rem;
-  
+
   /* Layout */
   --container-width: 1200px;
   --radius-sm: 0.5rem;
   --radius-md: 1rem;
   --radius-lg: 1.5rem;
   --radius-xl: 2rem;
-  
+
   /* Transitions */
   --trans-fast: 0.25s ease;
-  
+
   /* Base size for mobile-first */
   font-size: 16px;
 }
@@ -89,12 +89,12 @@ a {
 }
 
 .layout-pad-box {
-  padding: .75rem .75rem 0;
+  padding: 0.75rem 0.75rem 0;
 }
 
 .layout-wrapper {
   border-color: transparent;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 }
 
 /* Grid System */
@@ -104,9 +104,15 @@ a {
 }
 
 /* ========== TYPOGRAPHY UTILITIES ========== */
-.text-center { text-align: center; }
-.text-primary { color: var(--clr-bg-btn); }
-.text-grey { color: var(--clr-text-secondary); }
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: var(--clr-bg-btn);
+}
+.text-grey {
+  color: var(--clr-text-secondary);
+}
 
 /* Heading Scale */
 .heading-xl {
@@ -147,11 +153,11 @@ a {
   .grid-cols-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .grid-cols-4 {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -224,11 +230,11 @@ a {
   .page-hero {
     padding: 3rem 0;
   }
-  
+
   .page-content {
     padding: 3rem 0;
   }
-  
+
   .content-section {
     margin-bottom: 3rem;
   }
@@ -314,4 +320,4 @@ a {
 
 .bg-alt {
   background: var(--clr-bg-secondary);
-} 
+}
