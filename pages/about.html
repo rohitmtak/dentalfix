@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/components/footer.css" />
     <link rel="stylesheet" href="../css/components/buttons.css" />
     <link rel="stylesheet" href="../css/pages/about.css" />
+    <link rel="stylesheet" href="../css/components/modal.css" />
   </head>
 
   <body>
@@ -68,7 +69,7 @@
             </p>
             <div class="story-img-row">
               <img
-                src="../assets/images/story1.webp"
+                src="../assets/images/story2.jpg"
                 alt="Orthodontist smiling in clinic"
                 class="story-img story-img-sm"
               />
@@ -209,22 +210,67 @@
         </div>
       </section>
 
-      <!-- Team Section -->
-      <section class="team section">
-        <div class="container">
-          <h2>Meet Our Team</h2>
-          <div class="team-grid">
-            <div class="team-member">
-              <img src="../assets/images/doc1.JPG" alt="Dr. Ibrahim Shaikh" />
-              <h3>Dr. Ibrahim Shaikh</h3>
-              <p>Lead Dentist</p>
-            </div>
-            <div class="team-member">
-              <img src="../assets/images/doc2.JPG" alt="Dr. Amreen Shaikh" />
-              <h3>Dr. Amreen Shaikh</h3>
-              <p>Senior Dentist</p>
-            </div>
+      <!-- ===== Doctor Section (Right Image)===== -->
+      <section class="doctor-section">
+        <div class="doctor-wrap container">
+          <div class="doctor-copy">
+            <h2 class="doctor-name heading-lg">Dr. Ibrahim</h2>
+
+            <p class="doctor-bio">
+              Patients trust Dr. Ibrahim for his gentle manner, clinical
+              expertise, and thoughtful care. He takes time to listen,
+              understand, and tailor treatments that not only improve oral
+              health but also support your body's overall balance and
+              well-being.
+            </p>
+
+            <h3 class="doctor-subheading heading-sm">Specialized In</h3>
+            <ul class="doctor-tags">
+              <li class="tag tag--orange">Periodontology</li>
+              <li class="tag tag--blue">Oral Implantology</li>
+            </ul>
+
+            <a href="#contact" class="btn btn-secondary doctor-cta" data-modal="ibrahim">
+              Learn More
+            </a>
           </div>
+
+          <!-- portrait -->
+          <figure class="doctor-photo">
+            <img src="/assets/images/about/doc1.jpg" alt="Dr Ibrahim" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===== Doctor (Left Image) ===== -->
+      <section class="doctor-section is-reverse">
+        <div class="doctor-wrap container">
+          <div class="doctor-copy">
+            <h2 class="doctor-name heading-lg">Dr. Amreen</h2>
+
+            <p class="doctor-bio">
+              With extensive experience and a deep understanding of integrative
+              dental care, Dr. Amreen is dedicated to delivering top-tier
+              treatment. She believes that oral health is a vital part of
+              overall well-being and approaches each patient with precision,
+              care, and compassion.
+            </p>
+
+            <h3 class="doctor-subheading heading-sm">Specialized In</h3>
+            <ul class="doctor-tags">
+              <li class="tag tag--orange">Orthodontics</li>
+              <li class="tag tag--blue">Dentofacial Orthopedics</li>
+            </ul>
+
+            <a href="#contact" class="btn btn-secondary doctor-cta" data-modal="amreen">
+              Learn More
+            </a>
+          </div>
+
+          <!-- portrait -->
+          <figure class="doctor-photo">
+            <img src="/assets/images/about/doc2.jpg" alt="Dr Amreen" />
+          </figure>
         </div>
       </section>
 
@@ -244,10 +290,66 @@
       </section>
     </main>
 
+    <!-- Doctor Modals -->
+    <div class="modal-overlay" id="modal-ibrahim">
+      <div class="modal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-header">
+          <h2 class="modal-title">Dr. Ibrahim</h2>
+          <p class="modal-subtitle">Dental Specialist</p>
+        </div>
+        <div class="modal-content">
+          <div class="modal-info">
+            <h3>About Dr. Ibrahim</h3>
+            <p>Patients trust Dr. Ibrahim for his gentle manner, clinical expertise, and thoughtful care. He takes time to listen, understand, and tailor treatments that not only improve oral health but also support your body's overall balance and well-being.</p>
+            
+            <p>With over a decade of experience in dental care, Dr. Ibrahim has developed a reputation for his meticulous attention to detail and commitment to patient comfort. He believes in taking a holistic approach to dental health, considering how oral health impacts overall wellness.</p>
+            
+            <div class="modal-specialties">
+              <h4>Areas of Expertise</h4>
+              <div class="specialty-tags">
+                <span class="tag tag--orange">Periodontology</span>
+                <span class="tag tag--blue">Oral Implantology</span>
+                <span class="tag tag--yellow">Cosmetic Dentistry</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-amreen">
+      <div class="modal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-header">
+          <h2 class="modal-title">Dr. Amreen</h2>
+          <p class="modal-subtitle">Dental Specialist</p>
+        </div>
+        <div class="modal-content">
+          <div class="modal-info">
+            <h3>About Dr. Amreen</h3>
+            <p>With extensive experience and a deep understanding of integrative dental care, Dr. Amreen is dedicated to delivering top-tier treatment. She believes that oral health is a vital part of overall well-being and approaches each patient with precision, care, and compassion.</p>
+            
+            <p>Dr. Amreen specializes in creating beautiful, healthy smiles through advanced orthodontic treatments. Her expertise in dentofacial orthopedics allows her to address both aesthetic concerns and functional issues, helping patients achieve optimal oral health and confidence.</p>
+            
+            <div class="modal-specialties">
+              <h4>Areas of Expertise</h4>
+              <div class="specialty-tags">
+                <span class="tag tag--orange">Orthodontics</span>
+                <span class="tag tag--blue">Dentofacial Orthopedics</span>
+                <span class="tag tag--yellow">Preventive Care</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer placeholder -->
     <div id="footer-placeholder"></div>
 
     <script src="../js/include-components.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/modal.js"></script>
   </body>
 </html>

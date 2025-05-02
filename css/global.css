@@ -269,12 +269,12 @@ a {
 }
 
 .btn-secondary {
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-bg-btn);
   color: var(--clr-bg);
 }
 
 .btn-secondary:hover {
-  background-color: var(--clr-secondary-dark);
+  background-color: var(--clr-bg-btn-hover);
 }
 
 .btn-outline {
