@@ -65,3 +65,53 @@
   // Init
   updateSlide(0);
 })();
+
+// Custom
+// // Wait for the DOM to be fully loaded
+// document.addEventListener('DOMContentLoaded', function () {
+//   // Select all images inside the slide-images container
+//   const images = document.querySelectorAll('.slide-images img');
+//   // Select the range input
+//   const slider = document.querySelector('.slider-range');
+//   // Select the week label
+//   const weekLabel = document.querySelector('.slide-week');
+//   if (!images.length || !slider || !weekLabel) return;
+
+//   // Function to update image visibility based on slider value
+//   function updateImage() {
+//       const index = parseInt(slider.value, 10);
+//       images.forEach((img, i) => {
+//           img.style.display = (i === index) ? '' : 'none';
+//       });
+
+//       // Update the week label (index + 1, since weeks start at 1)
+//       weekLabel.textContent = `Week ${index + 1}`;
+//   }
+
+//   // Initialize: show the first image, hide the rest
+//   updateImage();
+
+//   // Add event listener to the slider
+//   slider.addEventListener('input', updateImage);
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+  // For each review column
+  document.querySelectorAll('.review-plain-col').forEach(function (col) {
+    const images = col.querySelectorAll('.slide-images img');
+    const slider = col.querySelector('.slider-range');
+    const weekLabel = col.querySelector('.slide-week');
+    if (!images.length || !slider || !weekLabel) return; // skip if elements missing
+
+    function updateImage() {
+      const index = parseInt(slider.value, 10);
+      images.forEach((img, i) => {
+        img.style.display = (i === index) ? '' : 'none';
+      });
+      weekLabel.textContent = `Week ${index + 1}`;
+    }
+
+    updateImage();
+    slider.addEventListener('input', updateImage);
+  });
+});

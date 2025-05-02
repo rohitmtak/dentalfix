@@ -493,3 +493,72 @@
     display: none;
   }
 }
+
+
+/* Custom */
+
+.slick-slide {
+  padding: 15px;
+  margin-inline: auto;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.slide-wrapper {
+  background-color: #ebf8ff;
+}
+
+.slide-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.slide-images > img {
+  max-width: 100%;
+}
+
+.slide-range {
+  position: relative;
+}
+
+.slider-range {
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background: #2f2f2f;
+  outline: none;
+}
+
+.slide-week {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+}
+.carousel-slides {
+  display: flex;
+  overflow: hidden;
+  width: 900px; /* Adjust as needed */
+}
+.carousel-slide {
+  min-width: 410px;
+  margin: 0 10px;
+  flex-shrink: 0;
+  display: none; /* Hide all by default */
+}
+.carousel-slide.active {
+  display: block; /* Show active slides */
+}

@@ -335,6 +335,7 @@
   aspect-ratio: 1/1;
   border-radius: var(--radius-xl);
   object-fit: cover;
+  object-position: top;
   border: 2px solid rgba(92, 63, 56, 0.45);
   box-shadow: 0 12px 28px rgb(0 0 0 / 0.08);
 }
