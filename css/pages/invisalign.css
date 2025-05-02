@@ -138,7 +138,7 @@
 }
 
 .why-invisalign-title {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(2.5rem, 5vw, var(--fs-5xl));
   color: var(--clr-text);
   font-weight: 700;
   margin-bottom: var(--spacing-xl);
@@ -185,7 +185,7 @@
 }
 
 .why-invisalign-head {
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-size: clamp(1.2rem, 2vw, var(--fs-3xl));
   color: var(--clr-text);
   font-weight: 700;
   margin-bottom: var(--spacing-xs);
@@ -193,7 +193,7 @@
 
 .why-invisalign-body {
   color: var(--clr-text);
-  font-size: var(--fs-base);
+  font-size: var(--fs-lg);
   line-height: 1.7;
   font-family: var(--ff-base);
   font-weight: 400;
@@ -362,7 +362,7 @@
 
 .step-text {
   flex-grow: 1;
-  font-size: var(--fs-md);
+  font-size: var(--fs-lg);
   padding-top: 1rem;
   border-top: 1px solid black;
 }
@@ -385,12 +385,15 @@
 }
 
 .commitment-heading {
-  font-size: var(--fs-4xl);
+  font-size: var(--fs-5xl);
+  margin-bottom: var(--spacing-lg);
 }
 
 .commitment-text {
-  max-width: 1200px;
-  margin-bottom: var(--spacing-sm);
+  max-width: 1050px;
+  margin-bottom: var(--spacing-md);
+  margin-inline: auto;
+  font-size: var(--fs-lg);
 }
 
 /* =====================================================================
@@ -413,7 +416,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  background: #fff;
+  background: #e7e7e7;
   border-radius: 1.5rem;
   margin: 3rem auto;
   max-width: 90vw;
