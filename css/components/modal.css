@@ -1,0 +1,109 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: var(--clr-bg);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--clr-text-secondary);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.modal-close:hover {
+  transform: scale(1.1);
+}
+
+.modal-header {
+  margin-bottom: 2rem;
+}
+
+.modal-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--clr-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.modal-subtitle {
+  color: var(--clr-bg-btn);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--clr-text-primary);
+}
+
+.modal-info p {
+  color: var(--clr-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.modal-specialties {
+  margin-top: 1rem;
+}
+
+.modal-specialties h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--clr-text-primary);
+}
+
+.specialty-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Show modal when active */
+.modal-overlay.active {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    padding: 2rem;
+  }
+  
+  .modal-title {
+    font-size: 2rem;
+  }
+} 

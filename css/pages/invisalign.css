@@ -5,11 +5,11 @@
 .invis-eyebrow {
   font-size: var(--fs-sm);
   font-weight: 600;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
 }
 
 .invis-heading {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   line-height: 1.15;
 }
 
@@ -65,7 +65,7 @@
     max-height: 480px;
     object-fit: cover;
     border-radius: var(--radius-lg);
-    box-shadow: 0 12px 28px rgb(0 0 0 / .12);
+    box-shadow: 0 12px 28px rgb(0 0 0 / 0.12);
     display: block;
   }
 }
@@ -84,7 +84,7 @@
   max-width: 600px;
   height: auto;
   border-radius: var(--radius-lg);
-  box-shadow: 0 12px 28px rgb(0 0 0 / .12);
+  box-shadow: 0 12px 28px rgb(0 0 0 / 0.12);
   display: block;
 }
 
@@ -124,7 +124,6 @@
 .hero-cta-btn {
   margin-top: var(--spacing-sm);
 }
-
 
 /* =====================================================================
    2. WHY  INVISALIGN  (grid of coloured cards)
@@ -173,7 +172,7 @@
 
 .why-invisalign-card:hover {
   transform: translateY(-6px) scale(1.025);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
   border-color: var(--clr-bg-btn);
 }
 
@@ -236,7 +235,7 @@
   object-fit: contain;
   border-radius: 0.5rem;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   padding: 0.25rem 0.5rem;
 }
 
@@ -251,7 +250,7 @@
 .expertise-box {
   background: #fff;
   border-radius: var(--radius-lg);
-  box-shadow: 0 12px 32px rgb(0 0 0 / .05);
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.05);
 }
 
 @media (min-width: 992px) {
@@ -286,7 +285,7 @@
 }
 
 .doctor-name {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
 }
 
 /* pagination dot */
@@ -381,7 +380,7 @@
 .commitment-box {
   background: #fff;
   border-radius: var(--radius-lg);
-  box-shadow: 0 12px 28px rgb(0 0 0 / .06);
+  box-shadow: 0 12px 28px rgb(0 0 0 / 0.06);
 }
 
 .commitment-heading {
@@ -403,7 +402,7 @@
   [data-reveal] {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity .4s var(--ease), transform .4s var(--ease);
+    transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
   }
 
   [data-reveal].in-view {
@@ -420,7 +419,7 @@
   border-radius: 1.5rem;
   margin: 3rem auto;
   max-width: 90vw;
-  padding: 2.5rem 1.5rem; 
+  padding: 2.5rem 1.5rem;
   position: relative;
   gap: 3.5rem 0;
 }
@@ -440,7 +439,7 @@
 .ba-img {
   width: 100%;
   min-width: auto;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   max-width: 100%;
   display: inline-block;
   object-fit: contain;
@@ -494,4 +493,3 @@
     display: none;
   }
 }
-

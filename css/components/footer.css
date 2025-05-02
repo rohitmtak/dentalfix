@@ -1,7 +1,7 @@
 /* ========== FOOTER COMPONENT ========== */
 
 .site-footer {
-  background: #121F30;
+  background: #121f30;
   padding-top: 5rem;
   color: var(--clr-black);
   margin-bottom: .75rem;
@@ -23,7 +23,7 @@
 .footer-logo h3 {
   font-size: var(--fs-2xl);
   margin-bottom: var(--spacing-xs);
-  color: var(--clr-bg)
+  color: var(--clr-bg);
 }
 
 .footer-logo p {
@@ -67,7 +67,7 @@
 .footer-col h4 {
   font-size: var(--fs-lg);
   margin-bottom: var(--spacing-lg);
-  color: var(--clr-bg)
+  color: var(--clr-bg);
 }
 
 .footer-col ul {
@@ -154,7 +154,7 @@
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .footer-brand {
     grid-column: 1 / -1;
   }
@@ -164,13 +164,10 @@
   .footer-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     gap: var(--spacing-md);
     text-align: center;
   }
 }
-
-
-
