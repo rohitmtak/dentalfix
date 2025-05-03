@@ -562,3 +562,13 @@
 .carousel-slide.active {
   display: block; /* Show active slides */
 }
+
+.review-dots.review-dots-invisalign {
+  display: none;
+}
+
+.review-plain-controls-invisalign {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
