@@ -227,7 +227,7 @@
    DOCTOR FEATURE
 =========================================================== */
 .doctor-section {
-  padding-block: var(--spacing-2xl);
+  padding-block: var(--spacing-2xl) 0;
   background: var(--clr-bg);
 }
 .doctor-wrap {
