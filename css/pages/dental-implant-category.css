@@ -1,0 +1,197 @@
+/* Implants Hero Section (category) */
+.implants-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: clamp(4rem, 12vw, 8rem) clamp(2rem, 8vw, 4rem);
+    background: var(--clr-bg, #f7fcfc);
+    text-align: center;
+    position: relative;
+  }
+  
+  .implants-hero-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .implants-hero-icon {
+    width: clamp(80px, 12vw, 120px);
+    height: clamp(80px, 12vw, 120px);
+    border-radius: 50%;
+    background: var(--clr-primary, #1766d9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 12px rgba(23,102,217,0.08);
+    padding: 1.5rem;
+  }
+  
+  .implants-hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--clr-text, #181c1f);
+    letter-spacing: -0.02em;
+  }
+  
+  .implants-hero-desc {
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    color: var(--clr-text-secondary, #23272a);
+    max-width: 700px;
+    margin-bottom: 4rem;
+    margin-inline: auto;
+  }
+  
+  .implants-hero-line {
+    width: 85vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #cfd8dc;
+    background: none;
+    height: 1px;
+  }
+  
+  @media (max-width: 600px) {
+    .implants-hero {
+      padding-block: 3rem 1.5rem;
+    }
+    .implants-hero-icon-wrap {
+      margin-bottom: 1.5rem;
+    }
+    .implants-hero-title {
+      font-size: clamp(1.7rem, 8vw, 2.5rem);
+    }
+    .implants-hero-desc {
+      font-size: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .implants-hero-line {
+      width: 95vw;
+    }
+  }
+
+/* Implant Categories Tabs Section */
+.implant-cats {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 1rem 3rem 1rem;
+}
+.cat-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  border-bottom: 1px solid #cfd8dc;
+  margin-bottom: 2.5rem;
+}
+
+.cat-tab {
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  color: var(--clr-text-secondary, #23272a);
+  padding: 1rem 0.5rem 1.1rem 0.5rem;
+  cursor: pointer;
+  border-bottom: 2.5px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  outline: none;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  white-space: normal;
+  text-align: center;
+  word-break: break-word;
+}
+.cat-tab.active,
+.cat-tab:focus-visible {
+  color: var(--clr-primary, #1766d9);
+  border-bottom: 2.5px solid var(--clr-primary, #1766d9);
+  font-weight: 700;
+}
+.cat-content-wrap {
+  margin-top: 2.5rem;
+}
+.cat-content {
+  display: none;
+  animation: fadeIn 0.4s;
+  text-align: center;
+}
+.cat-content.active {
+  display: block;
+}
+.cat-title {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--clr-text, #181c1f);
+}
+.cat-desc {
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  color: var(--clr-text-secondary, #23272a);
+  max-width: 600px;
+  margin: 0 auto 2.5rem auto;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+@media (max-width: 600px) {
+  .implant-cats {
+    padding-bottom: 2rem;
+  }
+  .cat-tabs {
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  .cat-title {
+    font-size: 1.2rem;
+  }
+  .cat-desc {
+    font-size: 0.98rem;
+  }
+}
+
+.cat-section {
+  background: var(--clr-bg-secondary);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg) var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+.cat-section-title {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  color: var(--clr-bg-btn);
+}
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-md);
+}
+.cat-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 8px rgba(23,102,217,0.04);
+  padding: var(--spacing-md) var(--spacing-sm);
+  text-align: left;
+}
+.cat-card-title {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+.cat-card-desc {
+  font-size: var(--fs-base);
+  color: var(--clr-text-secondary);
+}
+.cat-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--radius-lg);
+  margin: var(--spacing-lg) auto var(--spacing-xl) auto;
+  display: block;
+} 
