@@ -11,7 +11,7 @@
   gap: var(--spacing-xl);
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
@@ -126,7 +126,7 @@
 
 .implant-feature-section {
   padding-block: var(--spacing-2xl);
-  background: var(--clr-bg, #fff);
+  background: var(--clr-bg-secondary);
 }
 
 .implant-feature-header {
@@ -136,6 +136,7 @@
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: var(--spacing-2xl);
+  max-width: 1320px;
 }
 
 .implant-feature-title-col {
@@ -144,7 +145,7 @@
 }
 
 .implant-feature-title {
-  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   line-height: 1.15;
   margin-bottom: 0.5rem;
@@ -169,16 +170,17 @@
   gap: var(--spacing-xl);
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1320px;
 }
 
 .implant-feature-card {
   flex: 1 1 260px;
   min-width: 240px;
   max-width: 340px;
-  background: #fff;
+  /* background: #fff; */
   border-radius: var(--radius-lg);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  padding: 2rem 1.5rem 2.5rem 1.5rem;
+  /* box-shadow: 0 2px 12px rgba(0,0,0,0.04); */
+  padding: 2rem 0 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -186,9 +188,9 @@
   transition: box-shadow 0.2s;
 }
 
-.implant-feature-card:hover {
+/* .implant-feature-card:hover {
   box-shadow: 0 8px 32px rgba(0,0,0,0.10);
-}
+} */
 
 .feature-icon {
   display: flex;
@@ -197,12 +199,12 @@
   width: 56px;
   height: 56px;
   border-radius: 2rem;
-  background: #e6f2f0;
+  background: var(--clr-bg-btn);
   margin-bottom: 0.5rem;
 }
 
 .feature-card-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--clr-text);
   margin-bottom: 0.25rem;
@@ -226,8 +228,7 @@
 }
 
 .feature-card-link:hover {
-  color: var(--clr-text);
-  text-decoration: underline;
+  color: var(--clr-bg-btn-hover);
 }
 
 @media (max-width: 900px) {
@@ -266,14 +267,14 @@
 }
 
 .implant-categories-title {
-  font-size: clamp(2.25rem, 5vw, 2.75rem);
+  font-size: clamp(2.25rem, 5vw, 3rem);
   font-weight: 700;
   margin-bottom: 0.75rem;
   color: var(--clr-text);
 }
 
 .implant-categories-desc {
-  font-size: 1.15rem;
+  font-size: 1.125rem;
   color: var(--clr-text-secondary);
   max-width: 600px;
   margin: 0 auto;
@@ -282,11 +283,13 @@
 .implant-categories-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: var(--spacing-lg);
   grid-template-areas:
     "a a b b"
+    /* "a a e e" */
     "c d e e";
+    max-width: 1320px;
 }
 
 .card-lg {
@@ -312,8 +315,8 @@
 .implant-category-card {
   position: relative;
   display: flex;
-  align-items: flex-end;
-  border-radius: 2rem;
+  /* align-items: flex-end; */
+  border-radius: 1rem;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -326,7 +329,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(24,24,24,0.60) 60%, rgba(24,24,24,0.85) 100%);
+  background: linear-gradient(180deg, rgba(24,24,24,0.60) 60%, rgba(24,24,24,0.55) 100%);
   z-index: 1;
 }
 
@@ -364,8 +367,8 @@
 
 .category-card-btn {
   display: inline-block;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid #fff;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: 1px solid var(--clr-bg-secondary);
   border-radius: 0.5rem;
   background: transparent;
   color: #fff;
@@ -374,10 +377,10 @@
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
   margin-top: 0.5rem;
+  width: fit-content;
 }
 
 .category-card-btn:hover {
-  background: #fff;
   color: var(--clr-bg-btn, #0a938d);
 }
 
@@ -419,11 +422,20 @@
 
 .implant-faq-section {
   padding-block: var(--spacing-2xl);
-  background: var(--clr-bg, #fff);
+  background: var(--clr-bg-secondary);
+  display: flex;
+  justify-content: space-between;
 }
 
+.faq-header-cta {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+  
 .faq-header {
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: var(--spacing-xl);
 }
 
@@ -443,14 +455,16 @@
 
 .faq-list {
   max-width: 700px;
-  margin: 0 auto var(--spacing-2xl) auto;
+  /* margin: 0 auto var(--spacing-2xl) auto; */
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 50%;
+  padding-inline: var(--spacing-xl);
 }
 
 .faq-item {
-  background: #fff;
+  background: var(--clr-bg);
   border-radius: 1rem;
   border: 1px solid var(--clr-border, #e0e0e0);
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
@@ -501,8 +515,16 @@
 }
 
 .faq-cta {
-  text-align: center;
+  /* text-align: center; */
   margin-top: var(--spacing-xl);
+  /* border-radius: var(--radius-lg);
+  background-color: var(--clr-bg); */
+}
+
+.faq-cta-inner-container {
+  border-radius: var(--radius-lg);
+  background-color: var(--clr-bg);
+  padding: var(--spacing-lg);
 }
 
 .faq-cta-title {
@@ -561,16 +583,13 @@
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   gap: 1.5rem;
 }
 
 .implant-cta-desc {
   font-size: 1.15rem;
   color: var(--clr-text-secondary);
-  max-width: 420px;
   margin-bottom: 0.5rem;
-  text-align: right;
 }
 
 .implant-cta-actions {
