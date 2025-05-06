@@ -55,10 +55,6 @@
 
 .contact-info {
   flex: 1;
-  background: var(--clr-bg-btn);
-  color: var(--clr-bg);
-  border-radius: var(--radius-xl);
-  box-shadow: 0 4px 32px 0 rgba(33, 86, 249, 0.08);
   padding: var(--spacing-lg) var(--spacing-md);
   margin-top: var(--spacing-lg);
   display: flex;
@@ -229,7 +225,7 @@
 
 .contact-btn {
   margin-top: var(--spacing-md);
-  background: #aab7a2;
+  background: var(--clr-bg-btn);
   color: var(--clr-text-primary);
   border-radius: var(--radius-lg);
   min-width: 120px;
