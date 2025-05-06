@@ -1,84 +1,101 @@
-/* Implants Hero Section (category) */
+/*==============================================================================
+  1. CSS VARIABLES (tokens for card sizes, spacing, borders, radii)
+==============================================================================*/
+:root {
+  /* Card size tokens */
+  --ci-main-w: 600px;   /* large card */
+  --ci-main-h: 600px;
+  --ci-med-w: 350px;    /* medium cards */
+  --ci-med-h: 270px;
+  --ci-sm-w: 350px;     /* small cards */
+  --ci-sm-h: 180px;
+
+  /* Gaps & padding */
+  --ci-gap: var(--spacing-lg);  /* e.g. 2.5rem */
+  --ci-pad: var(--spacing-md);  /* e.g. 1.5rem */
+
+  /* Border & radius */
+  --ci-border: var(--clr-border) solid 2px;
+  --ci-radius: var(--radius-sm);
+}
+
+/*==============================================================================
+  2. Implants Hero Section
+==============================================================================*/
 .implants-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-block: clamp(4rem, 12vw, 8rem) clamp(2rem, 8vw, 4rem);
-    background: var(--clr-bg, #f7fcfc);
-    text-align: center;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: clamp(4rem, 12vw, 8rem) clamp(2rem, 8vw, 4rem);
+  background: var(--clr-bg, #f7fcfc);
+  text-align: center;
+  position: relative;
+}
+.implants-hero-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.implants-hero-icon {
+  width: clamp(80px, 12vw, 120px);
+  height: clamp(80px, 12vw, 120px);
+  border-radius: 50%;
+  background: var(--clr-primary, #1766d9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(23,102,217,0.08);
+  padding: 1.5rem;
+}
+.implants-hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--clr-text, #181c1f);
+  letter-spacing: -0.02em;
+}
+.implants-hero-desc {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: var(--clr-text-secondary, #23272a);
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+.implants-hero-line {
+  width: 85vw;
+  max-width: 1400px;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #cfd8dc;
+  height: 1px;
+}
+@media (max-width: 600px) {
+  .implants-hero {
+    padding-block: 3rem 1.5rem;
   }
-  
   .implants-hero-icon-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  .implants-hero-title {
+    font-size: clamp(1.7rem, 8vw, 2.5rem);
+  }
+  .implants-hero-desc {
+    font-size: 1rem;
     margin-bottom: 2.5rem;
   }
-  
-  .implants-hero-icon {
-    width: clamp(80px, 12vw, 120px);
-    height: clamp(80px, 12vw, 120px);
-    border-radius: 50%;
-    background: var(--clr-primary, #1766d9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 12px rgba(23,102,217,0.08);
-    padding: 1.5rem;
-  }
-  
-  .implants-hero-title {
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: var(--clr-text, #181c1f);
-    letter-spacing: -0.02em;
-  }
-  
-  .implants-hero-desc {
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
-    color: var(--clr-text-secondary, #23272a);
-    max-width: 700px;
-    margin-bottom: 4rem;
-    margin-inline: auto;
-  }
-  
   .implants-hero-line {
-    width: 85vw;
-    max-width: 1400px;
-    margin: 0 auto;
-    border: none;
-    border-top: 1px solid #cfd8dc;
-    background: none;
-    height: 1px;
+    width: 95vw;
   }
-  
-  @media (max-width: 600px) {
-    .implants-hero {
-      padding-block: 3rem 1.5rem;
-    }
-    .implants-hero-icon-wrap {
-      margin-bottom: 1.5rem;
-    }
-    .implants-hero-title {
-      font-size: clamp(1.7rem, 8vw, 2.5rem);
-    }
-    .implants-hero-desc {
-      font-size: 1rem;
-      margin-bottom: 2.5rem;
-    }
-    .implants-hero-line {
-      width: 95vw;
-    }
-  }
+}
 
-/* Implant Categories Tabs Section */
+/*==============================================================================
+  3. Implant Categories Tabs Section
+==============================================================================*/
 .implant-cats {
   margin: 0 auto;
   max-width: 1400px;
-  padding: 0 1rem 3rem 1rem;
+  padding: 0 1rem 3rem;
 }
 .cat-tabs {
   display: flex;
@@ -88,23 +105,20 @@
   border-bottom: 1px solid #cfd8dc;
   margin-bottom: 2.5rem;
 }
-
 .cat-tab {
   background: none;
   border: none;
   font: inherit;
   font-size: clamp(1.1rem, 2vw, 1.25rem);
   color: var(--clr-text-secondary, #23272a);
-  padding: 1rem 0.5rem 1.1rem 0.5rem;
+  padding: 1rem 0.5rem 1.1rem;
   cursor: pointer;
   border-bottom: 2.5px solid transparent;
   transition: color 0.2s, border-color 0.2s;
   outline: none;
   font-weight: 500;
   letter-spacing: 0.01em;
-  white-space: normal;
   text-align: center;
-  word-break: break-word;
 }
 .cat-tab.active,
 .cat-tab:focus-visible {
@@ -123,18 +137,6 @@
 .cat-content.active {
   display: block;
 }
-.cat-title {
-  font-size: clamp(1.5rem, 4vw, 2.25rem);
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--clr-text, #181c1f);
-}
-.cat-desc {
-  font-size: clamp(1.05rem, 2vw, 1.2rem);
-  color: var(--clr-text-secondary, #23272a);
-  max-width: 600px;
-  margin: 0 auto 2.5rem auto;
-}
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: none; }
@@ -147,51 +149,125 @@
     gap: 0.5rem;
     font-size: 1rem;
   }
-  .cat-title {
-    font-size: 1.2rem;
+}
+
+/*==============================================================================
+  4. Card Grid & Steps Row
+==============================================================================*/
+.implant-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: var(--ci-gap);
+}
+.implant-grid .card--main {
+  grid-column: 1;
+  grid-row: span 2;
+}
+
+.cat-steps-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ci-gap);
+  margin-top: var(--ci-gap);
+}
+
+/*==============================================================================
+  5. Base Card Component
+==============================================================================*/
+.card {
+  background: var(--clr-bg-secondary);
+  border: var(--ci-border);
+  border-radius: var(--ci-radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: none;
+}
+
+/* Image area */
+.card__image {
+  width: 100%;
+  height: auto;
+  background: #ddd center/cover no-repeat;
+  position: relative;
+  flex-shrink: 0;
+}
+/* Overlay variant */
+.card__image--overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+/* Content area */
+.card__content {
+  padding: var(--ci-pad);
+  flex-grow: 1;
+}
+.card__title {
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--clr-text-primary);
+}
+.card__body {
+  font-size: var(--fs-base);
+  color: var(--clr-text-secondary);
+  line-height: 1.4;
+}
+
+/*==============================================================================
+  6. Size Modifiers
+==============================================================================*/
+.card--main {
+  width: var(--ci-main-w);
+  height: var(--ci-main-h);
+}
+.card--med {
+  width: var(--ci-med-w);
+  height: var(--ci-med-h);
+}
+.card--sm {
+  width: var(--ci-sm-w);
+  height: var(--ci-sm-h);
+}
+
+/*==============================================================================
+  7. Responsive Breakpoints
+==============================================================================*/
+/* 2-column collapse */
+@media (max-width: 992px) {
+  .implant-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .cat-desc {
-    font-size: 0.98rem;
+  .implant-grid .card--main {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    height: auto;
+  }
+  .card--med,
+  .card--sm {
+    width: 100%;
+    height: auto;
   }
 }
 
-.cat-section {
-  background: var(--clr-bg-secondary);
-  border-radius: var(--radius-xl);
-  padding: var(--spacing-lg) var(--spacing-md);
-  margin-bottom: var(--spacing-xl);
+/* 1-column mobile */
+@media (max-width: 768px) {
+  .implant-grid {
+    grid-template-columns: 1fr;
+  }
+  .cat-steps-row {
+    flex-direction: column;
+  }
+  .card,
+  .card--main,
+  .card--med,
+  .card--sm {
+    width: 100%;
+    height: auto;
+  }
 }
-.cat-section-title {
-  font-size: var(--fs-xl);
-  font-weight: 700;
-  margin-bottom: var(--spacing-md);
-  color: var(--clr-bg-btn);
-}
-.cat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--spacing-md);
-}
-.cat-card {
-  background: #fff;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 2px 8px rgba(23,102,217,0.04);
-  padding: var(--spacing-md) var(--spacing-sm);
-  text-align: left;
-}
-.cat-card-title {
-  font-size: var(--fs-lg);
-  font-weight: 600;
-  margin-bottom: var(--spacing-xs);
-}
-.cat-card-desc {
-  font-size: var(--fs-base);
-  color: var(--clr-text-secondary);
-}
-.cat-img {
-  width: 100%;
-  max-width: 600px;
-  border-radius: var(--radius-lg);
-  margin: var(--spacing-lg) auto var(--spacing-xl) auto;
-  display: block;
-} 
