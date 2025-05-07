@@ -82,12 +82,14 @@
 .footer-col ul li a {
   color: #b8b8b8;
   text-decoration: none;
-  transition: color var(--trans-fast);
+  transition: all var(--trans-fast);
   font-size: var(--fs-sm);
+  display: inline-block;
 }
 
 .footer-col ul li a:hover {
-  color: var(--clr-bg-btn);
+  color: var(--clr-bg-secondary);
+  transform: scale(1.05);
 }
 
 .contact-info li {

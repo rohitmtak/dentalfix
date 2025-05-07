@@ -27,7 +27,7 @@
 
 .appointment-title {
   font-family: var(--ff-base);
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-size: clamp(2.2rem, 5vw, 3rem);
   font-weight: 600;
   margin-bottom: 0.5em;
   line-height: 1.1;
@@ -35,7 +35,7 @@
 }
 
 .appointment-desc {
-  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
   color: var(--clr-text-secondary);
   margin-bottom: var(--spacing-xl);
 }
@@ -81,13 +81,22 @@
 
 .appointment-field input,
 .appointment-field select {
-  font-size: var(--fs-base);
+  font-size: var(--fs-sm);
   padding: 0.9em 1em;
   border-radius: var(--radius-md);
   border: 1px solid var(--clr-border);
   background: #fafbfc;
   outline: none;
   transition: border 0.2s;
+  color: var(--clr-text-primary);
+}
+
+.appointment-field select:invalid {
+  color: #666;
+}
+
+.appointment-field select option:not(:first-of-type) {
+  color: var(--clr-text-primary);
 }
 
 .appointment-field input:focus,
@@ -99,6 +108,7 @@
   display: flex;
   align-items: center;
   gap: 0.7em;
+  position: relative;
 }
 
 .appointment-date-icon {
@@ -162,4 +172,31 @@
   border-radius: var(--radius-xl);
   object-fit: cover;
   display: block;
+}
+
+.appointment-field input[type="date"] {
+  color: transparent;
+}
+
+.appointment-field input[type="date"]:focus,
+.appointment-field input[type="date"]:valid {
+  color: inherit;
+}
+
+.appointment-date-placeholder {
+  position: absolute;
+  left: 3.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  pointer-events: none;
+}
+
+input[type="date"]:not(:focus):not(:valid) + .appointment-date-placeholder {
+  display: block;
+}
+
+input[type="date"]:focus + .appointment-date-placeholder,
+input[type="date"]:valid + .appointment-date-placeholder {
+  display: none;
 }

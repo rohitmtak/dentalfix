@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding-bottom: var(--spacing-2xl);
   margin: 0;
   background: none;
 }
@@ -62,15 +62,16 @@
 }
 
 .about-hero-desc {
-  font-size: clamp(1.1rem, 1.5vw + 0.5rem, 1.35rem);
+  font-size: clamp(1.1rem, 1.5vw + 0.5rem, 1.125rem);
   color: var(--clr-text-secondary);
   margin: 0;
-  max-width: 520px;
+  max-width: 500px;
 }
 
 /* Our Story Section - Pixel Perfect Layout */
 .story-block {
-  padding: 4rem 0 2rem 0;
+  padding: 4rem 0;
+  background-color: var(--clr-bg-secondary);
 }
 
 .story-grid {
@@ -100,7 +101,7 @@
 }
 
 .story-desc {
-  font-size: 1.18rem;
+  font-size: 1.125rem;
   color: var(--clr-text-secondary);
   margin-bottom: 2rem;
   /* max-width: 600px; */
@@ -145,8 +146,8 @@
 
 /* Values Section */
 .values-block {
-  padding: 5rem 0 3rem 0;
-  background: var(--clr-bg, #fff);
+  padding: 4rem 0;
+  background-color: var(--clr-bg-secondary);
 }
 
 .values-header {
@@ -165,11 +166,10 @@
 
 .values-subtitle {
   font-family: var(--ff-base);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--clr-text);
   margin: 0 auto;
   max-width: 900px;
-  line-height: 1.5;
 }
 
 .values-grid {
@@ -217,7 +217,7 @@
 }
 
 .value-desc {
-  font-size: 1.1rem;
+  font-size: var(--fs-lg);
   color: var(--clr-text-secondary);
   line-height: 1.7;
   max-width: 520px;
@@ -227,7 +227,7 @@
    DOCTOR FEATURE
 =========================================================== */
 .doctor-section {
-  padding-block: var(--spacing-2xl) 0;
+  padding-block: var(--spacing-2xl);
   background: var(--clr-bg);
 }
 .doctor-wrap {
@@ -270,8 +270,8 @@
 
 .doctor-bio {
   color: var(--clr-text-secondary);
-  line-height: 1.7;
   margin-bottom: var(--spacing-lg);
+  font-size: var(--fs-lg);
 }
 
 .doctor-subheading {
@@ -342,8 +342,8 @@
 
 /* CTA Section */
 .cta {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--clr-bg-secondary);
+  color: var(--clr-text-primary);
   padding: 5rem 0;
   text-align: center;
 }
@@ -535,20 +535,8 @@
 
 /* Services Highlight Section - Pixel Perfect, Using Global Tokens */
 .services-highlight-block {
-  padding: 3.5rem 0 3rem 0;
+  padding: 3.5rem 0;
   background: none;
-}
-
-.services-highlight-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2.5rem;
-
-  /* custom changes */
-  max-width: 1400px;
-  margin-inline: auto;
 }
 
 .services-title {
@@ -609,9 +597,8 @@
 
 .services-highlight-desc {
   font-family: var(--ff-base);
-  font-size: 1.18rem;
+  font-size: 1.125rem;
   color: var(--clr-text-secondary);
-  line-height: 1.6;
   margin: 0 auto;
   max-width: 420px;
 }
