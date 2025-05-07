@@ -106,12 +106,6 @@
   font-weight: 500;
 }
 
-.icon-phone {
-  width: 1rem;
-  aspect-ratio: 1;
-  background: url(../images/phone.svg) no-repeat center/contain;
-}
-
 .btn-book {
   padding-inline: 1.75rem;
 }

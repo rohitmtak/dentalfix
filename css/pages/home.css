@@ -38,8 +38,8 @@
 
 .card-text {
   color: var(--clr-text-secondary);
-  margin-bottom: var(--spacing-sm);
-  line-height: 1.6;
+  /* margin-bottom: var(--spacing-sm); */
+  font-size: var(--fs-lg);
 }
 
 .card-meta {
@@ -91,7 +91,6 @@
 
 .hero-carousel-text p {
   font-size: clamp(1.125rem, 4vw, 1.25rem);
-  line-height: 1.5;
   margin-bottom: 2rem;
   color: var(--clr-text);
   opacity: 0.85;
@@ -256,7 +255,6 @@
 
 .serenity-sub {
   font-size: 1.25rem;
-  line-height: 1.6;
   color: var(--clr-brown);
   max-width: 42ch;
   margin-inline: auto;
@@ -334,12 +332,6 @@
   line-height: 1.25;
   color: var(--clr-text);
   margin-bottom: 1.25rem;
-}
-
-.card-text {
-  font-size: var(--fs-lg);
-  line-height: 1.75;
-  color: #0009;
 }
 
 /* Mobile styles */
@@ -553,9 +545,8 @@
 }
 
 .doctor-bio {
-  font-size: 1rem;
-  line-height: 1.75;
-  color: #1b1e1f;
+  font-size: 1.125rem;
+  color: var(--clr-text-secondary);
   /* margin-bottom: 3rem; */
   max-width: 55ch;
 }

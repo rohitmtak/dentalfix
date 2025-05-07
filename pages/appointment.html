@@ -40,7 +40,7 @@
             <div class="appointment-field">
               <label for="treatment">Treatment</label>
               <select id="treatment" name="treatment" required>
-                <option value="">Select Treatment</option>
+                <option value="" disabled selected>Select Treatment</option>
                 <option value="cleaning">Cleaning</option>
                 <option value="whitening">Whitening</option>
                 <option value="braces">Braces</option>
@@ -49,7 +49,7 @@
             <div class="appointment-field">
               <label for="doctor">Doctor</label>
               <select id="doctor" name="doctor" required>
-                <option value="">Select Doctor</option>
+                <option value="" disabled selected>Select Doctor</option>
                 <option value="dr-smith">Dr. Smith</option>
                 <option value="dr-jones">Dr. Jones</option>
               </select>
@@ -71,6 +71,7 @@
               <div class="appointment-date-wrap">
                 <span class="appointment-date-icon" aria-hidden="true">📅</span>
                 <input type="date" id="date" name="date" required />
+                <span class="appointment-date-placeholder">Select Date</span>
               </div>
             </div>
             <div class="appointment-field appointment-time-group">
@@ -95,7 +96,7 @@
                   <option value="45">45</option>
                 </select>
               </div>
-              <span class="appointment-time-hint">Select Time</span>
+              <!-- <span class="appointment-time-hint">Select Time</span> -->
             </div>
           </div>
           <button type="submit" class="appointment-btn">Make an Appointment</button>

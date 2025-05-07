@@ -191,9 +191,8 @@
 }
 
 .why-invisalign-body {
-  color: var(--clr-text);
+  color: var(--clr-text-secondary);
   font-size: var(--fs-lg);
-  line-height: 1.7;
   font-family: var(--ff-base);
   font-weight: 400;
 }
@@ -364,6 +363,7 @@
   font-size: var(--fs-lg);
   padding-top: 1rem;
   border-top: 1px solid black;
+  color: var(--clr-text-secondary);
 }
 
 /* =====================================================================
@@ -393,6 +393,7 @@
   margin-bottom: var(--spacing-md);
   margin-inline: auto;
   font-size: var(--fs-lg);
+  color: var(--clr-text-secondary);
 }
 
 /* =====================================================================
