@@ -1,8 +1,8 @@
 /* ========== NAVIGATION COMPONENT ========== */
 /* Base header styles */
 .site-header {
-  position: static;
-  z-index: 1000;
+  position: relative;
+  z-index: 1100;
   background: var(--clr-bg);
   transition: all var(--trans-fast);
   isolation: isolate;
