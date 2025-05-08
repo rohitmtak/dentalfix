@@ -1,14 +1,14 @@
 # Ignore all image files
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.bmp
-*.svg
-*.ico
-*.webp
-*.tiff
-*.tif
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.bmp
+# *.svg
+# *.ico
+# *.webp
+# *.tiff
+# *.tif
 
 
 .cursor/
