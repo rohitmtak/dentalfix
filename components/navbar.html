@@ -17,13 +17,28 @@
               >About Us <span class="caret" aria-hidden="true"></span
             ></a>
           </li>
-          <li>
-            <a href="/pages/services.html" class="nav-link"
-              >Services <span class="caret" aria-hidden="true"></span
-            ></a>
-          </li>
-          <li>
-            <a href="/pages/invisalign.html" class="nav-link">Invisalign</a>
+          <li class="nav-item nav-item--dropdown">
+            <a href="/pages/services.html" class="nav-link services-link" aria-haspopup="true" aria-expanded="false">
+              Services <span class="caret" aria-hidden="true"></span>
+            </a>
+            <ul class="dropdown-menu" aria-label="submenu">
+              <li class="dropdown-item dropdown-item--submenu">
+                <button class="submenu-btn" aria-haspopup="true" aria-expanded="false">
+                  General Dentistry <span class="caret" aria-hidden="true"></span>
+                </button>
+                <ul class="submenu-list" aria-label="submenu">
+                  <li class="submenu-item"><a href="#" class="submenu-link">Cleaning</a></li>
+                  <li class="submenu-item"><a href="#" class="submenu-link">Dental Crowns</a></li>
+                  <li class="submenu-item"><a href="#" class="submenu-link">Fillings</a></li>
+                  <li class="submenu-item"><a href="#" class="submenu-link">Root Canals</a></li>
+                  <li class="submenu-item"><a href="#" class="submenu-link">Teeth Extractions</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-item"><a href="/pages/invisalign.html" class="dropdown-link">Invisalign</a></li>
+              <!-- <li class="dropdown-item"><a href="#" class="dropdown-link">Dental Whitening</a></li> -->
+              <li class="dropdown-item"><a href="/pages/dental-implant.html" class="dropdown-link">Dental Implants</a></li>
+              <li class="dropdown-item"><a href="#" class="dropdown-link">Dental Veneers</a></li>
+            </ul>
           </li>
           <li><a href="/pages/blog.html" class="nav-link">Blog</a></li>
           <li><a href="/pages/contact.html" class="nav-link">Contacts</a></li>
