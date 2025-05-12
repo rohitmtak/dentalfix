@@ -203,7 +203,7 @@
   width: 70px;
   height: 70px;
   object-fit: contain;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   color: var(--clr-bg-btn);
   fill: var(--clr-bg-btn);
 }

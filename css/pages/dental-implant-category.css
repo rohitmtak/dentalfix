@@ -42,7 +42,7 @@
   width: clamp(80px, 12vw, 120px);
   height: clamp(80px, 12vw, 120px);
   border-radius: 50%;
-  background: var(--clr-primary, #1766d9);
+  background: var(--clr-bg-btn);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,8 +209,12 @@
 /*==============================================================================
   5. Base Card Component
 ==============================================================================*/
-.card {
+.implant-cats {
   background: var(--clr-bg-secondary);
+}
+
+.card {
+  background: var(--clr-bg);
   border: var(--ci-border);
   border-radius: var(--ci-radius);
   overflow: hidden;
@@ -247,6 +251,7 @@
 .card__content {
   padding: var(--spacing-xl);
   flex-grow: 1;
+  /* background: var(--clr-bg) */
 }
 
 .small-card-content {

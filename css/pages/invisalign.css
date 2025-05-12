@@ -23,9 +23,9 @@
    1. HERO  (class names: .invis-hero, etc.)
 ===================================================================== */
 
-.invis-hero {
-  /* background: var(--clr-bg); */
-  /* color: var(--clr-text); */
+/* .invis-hero {
+  background: var(--clr-bg);
+  color: var(--clr-text);
   padding-block: var(--spacing-2xl);
 }
 
@@ -123,7 +123,7 @@
 
 .hero-cta-btn {
   margin-top: var(--spacing-sm);
-}
+} */
 
 /* =====================================================================
    2. WHY  INVISALIGN  (grid of coloured cards)
@@ -369,6 +369,10 @@
 /* =====================================================================
    5. COMMITMENT
 ===================================================================== */
+.commitment {
+  background: var(--clr-bg);
+}
+
 
 .commitment-title {
   font-size: var(--fs-700);
@@ -572,4 +576,95 @@
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+}
+
+
+/* hero carousel */
+
+.hero-carousel {
+  min-height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  padding: 0;
+  background: var(--color-bg, #00b6e3);
+}
+
+.hero-swiper,
+.hero-slide {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.swiper-slide.hero-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 100%;
+  padding: 0;
+}
+
+.hero-img-wrap {
+  flex: 0 0 50%;
+  max-width: 50%;
+  min-width: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  background: #111;
+  overflow: hidden;
+  height: 100%;
+  padding: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  display: block;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hero-content {
+  flex: 0 0 50%;
+  max-width: 50%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4vw 6vw;
+  background: var(--color-bg, #00b6e3);
+  color: #fff;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .swiper-slide.hero-slide {
+    flex-direction: column;
+    height: auto;
+  }
+  .hero-img-wrap,
+  .hero-content {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    height: 50vh;
+    min-width: 0;
+  }
+  .hero-img {
+    height: 100%;
+  }
+}
+
+/* Swiper pagination bullets custom style for hero carousel */
+.hero-carousel .swiper-pagination-bullet {
+  background: #d0d8e6;
+  opacity: 1;
+  transition: background 0.2s;
+}
+.hero-carousel .swiper-pagination-bullet-active {
+  background: #00b6e3;
 }

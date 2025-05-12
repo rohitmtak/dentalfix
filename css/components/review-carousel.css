@@ -1,6 +1,6 @@
 /* Review Plain Carousel Styles */
 .review-plain {
-  background: var(--clr-bg);
+  background: var(--clr-bg-secondary);
   padding: var(--spacing-2xl);
 }
 
