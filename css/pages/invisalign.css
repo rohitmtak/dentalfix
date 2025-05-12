@@ -582,8 +582,8 @@
 /* hero carousel */
 
 .hero-carousel {
-  min-height: calc(100vh - 80px);
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 92px);
+  height: calc(100vh - 92px);
   padding: 0;
   background: var(--color-bg, #00b6e3);
 }
@@ -599,7 +599,7 @@
 .swiper-slide.hero-slide {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  /* align-items: stretch; */
   height: 100%;
   padding: 0;
 }
@@ -621,7 +621,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: left center;
+  object-position: center;
   display: block;
   border-radius: 0;
   box-shadow: none;
@@ -636,7 +636,7 @@
   justify-content: center;
   align-items: flex-start;
   padding: 4vw 6vw;
-  background: var(--color-bg, #00b6e3);
+  background: #009ace;
   color: #fff;
   height: 100%;
 }
@@ -667,4 +667,10 @@
 }
 .hero-carousel .swiper-pagination-bullet-active {
   background: #00b6e3;
+}
+
+.swiper-slide {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
 }
