@@ -1,15 +1,15 @@
 const serviceData = {
-  restorative: {
-    title: "Restorative Bliss",
+  root: {
+    title: "Root Canal",
     img: "/assets/images/dental-implant/473.jpg",
-    aboutTitle: "About Restorative Bliss",
-    aboutText: "Content for Restorative Bliss...",
+    aboutTitle: "About Root Canal",
+    aboutText: "Content for Root...",
   },
-  pediatric: {
-    title: "Pediatric Dentistry",
-    img: "/assets/images/pediatric.jpg",
-    aboutTitle: "About Pediatric Dentistry",
-    aboutText: "Content for Pediatric Dentistry...",
+  braces: {
+    title: "Braces",
+    img: "/assets/images/dental-implant/2149164279.jpg",
+    aboutTitle: "About Braces",
+    aboutText: "Content for Braces...",
   },
   // ...add all categories here...
 };
