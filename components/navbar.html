@@ -10,11 +10,35 @@
       <nav aria-label="Primary" class="main-nav">
         <ul class="nav-list">
           <li><a href="/index.html" aria-current="page" class="nav-link">Home</a></li>
-          <li><a href="/pages/about.html" class="nav-link">About Us</a></li>
-            <a href="/pages/services.html" class="nav-link services-link">Services</a>
-            <a href="/pages/invisalign.html" class="nav-link">Invisalign</a></li>
+          <li class="nav-item--dropdown">
+            <a href="/pages/about.html" class="nav-link about-link" aria-haspopup="true" aria-expanded="false">
+              About <span class="caret" aria-hidden="true"></span>
+            </a>
+            <div class="dropdown-menu about-dropdown" role="menu">
+              <div class="dropdown-heading-wrap">
+                <span class="dropdown-heading">About</span>
+              </div>
+              <div class="about-dropdown-row">
+                <a href="/pages/about.html" class="about-dropdown-item">
+                  <img src="/assets/images/blog/blog-1.webp" alt="Our dental team group photo" class="about-dropdown-img" loading="lazy">
+                  <span class="about-dropdown-label">About Us</span>
+                </a>
+                <a href="/pages/smile-gallery.html" class="about-dropdown-item">
+                  <img src="/assets/images/blog/blog-2.webp" alt="Dentist with patient in smile gallery" class="about-dropdown-img" loading="lazy">
+                  <span class="about-dropdown-label">Smile Gallery</span>
+                </a>
+                <a href="/pages/services.html" class="about-dropdown-item">
+                  <img src="/assets/images/blog/blog-6.webp" alt="Dental services consultation" class="about-dropdown-img" loading="lazy">
+                  <span class="about-dropdown-label">Services</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li><a href="/pages/services.html" class="nav-link">Services</a></li>
+          <li><a href="/pages/invisalign.html" class="nav-link">Invisalign</a></li>
+          <li><a href="/pages/dental-implant.html" class="nav-link">Implant</a></li>
           <li><a href="/pages/smile-gallery.html" class="nav-link">Smile Gallery</a></li>
-          <li><a href="/pages/blog.html" class="nav-link">Blog</a></li>
+          <!-- <li><a href="/pages/blog.html" class="nav-link">Blog</a></li> -->
           <li><a href="/pages/contact.html" class="nav-link">Contacts</a></li>
         </ul>
       </nav>
