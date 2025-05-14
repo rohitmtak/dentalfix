@@ -710,7 +710,7 @@
 .doctor-title {
   font-size: clamp(2.25rem, 4vw + 1rem, 3rem);
   line-height: 1.15;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 2.5rem;
   color: #1b1e1f;
 }

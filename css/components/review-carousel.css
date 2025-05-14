@@ -1,6 +1,6 @@
 /* Review Plain Carousel Styles */
 .review-plain {
-  background: var(--clr-bg-secondary);
+  background: var(--clr-bg);
   padding: var(--spacing-2xl);
 }
 
@@ -134,8 +134,8 @@
 }
 
 .review-arrow {
-  background: var(--clr-white);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--clr-bg-btn);
+  border: none;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;

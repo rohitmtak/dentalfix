@@ -129,95 +129,133 @@
    2. WHY  INVISALIGN  (grid of coloured cards)
 ===================================================================== */
 
-.why-invisalign-title,
-.why-invisalign-head,
-.why-invisalign-body,
-.why-invisalign-card {
-  font-family: var(--ff-base);
+.why-invisalign {
+  background-color: var(--clr-bg);
+}
+
+.why-invisalign-outer {
+  border-radius: 2rem;
+  margin: 2rem auto;
 }
 
 .why-invisalign-title {
-  font-size: clamp(2.5rem, 5vw, var(--fs-5xl));
+  font-size: 3rem;
   color: var(--clr-text);
+  text-align: center;
   font-weight: 700;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: 2.5rem;
   letter-spacing: -0.01em;
 }
 
 .why-invisalign-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-xl);
-  justify-items: center;
-  align-items: stretch;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: .75rem;
 }
 
 .why-invisalign-card {
   background: var(--clr-bg-secondary);
-  border: 2px solid var(--clr-border);
-  border-radius: var(--radius-lg);
-  padding: var(--spacing-xl) var(--spacing-lg);
-  height: 100%;
-  min-height: 320px;
-  max-height: 400px;
+  border: 2px solid #d6cfc9;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-  transition: transform 0.18s var(--ease), box-shadow 0.18s var(--ease);
-  text-align: center;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.18s;
 }
 
-.why-invisalign-card:hover {
-  transform: translateY(-6px) scale(1.025);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-  border-color: var(--clr-bg-btn);
-}
-
-.why-invisalign-icon {
-  width: 56px;
-  height: 56px;
-  margin-bottom: var(--spacing-md);
+.why-invisalign-card .why-invisalign-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
   object-fit: contain;
 }
 
 .why-invisalign-head {
-  font-size: clamp(1.2rem, 2vw, var(--fs-3xl));
-  color: var(--clr-text);
+  font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: 0.5rem;
+  color: var(--clr-text);
 }
 
 .why-invisalign-body {
+  font-size: 1rem;
   color: var(--clr-text-secondary);
-  font-size: var(--fs-lg);
-  font-family: var(--ff-base);
   font-weight: 400;
 }
 
-@media (max-width: 1024px) {
+.bg-pink {
+  background: #f9ecec;
+  border-color: #e7cfcf;
+}
+
+.bg-yellow {
+  background: #fcf7e6;
+  border-color: #e7e0c7;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-2-row {
+  grid-row: span 2;
+}
+
+.why-invisalign-card.span-2 {
+  grid-column: span 2;
+  align-self: start;
+  height: auto;
+}
+
+.why-invisalign-card.span-2-row {
+  grid-row: span 2;
+  align-self: stretch;
+  height: 100%;
+}
+
+.why-invisalign-card:not(.span-2):not(.span-2-row) {
+  align-self: stretch;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
   .why-invisalign-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-lg);
+    grid-template-rows: auto;
   }
 
-  .why-invisalign-card {
-    min-height: 260px;
-    max-height: 280px;
+  .why-invisalign-card.span-2,
+  .why-invisalign-card.span-2-row {
+    grid-column: span 2;
+    grid-row: auto;
   }
 }
 
 @media (max-width: 700px) {
-  .why-invisalign-grid {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
+  .why-invisalign-outer {
+    padding: 1.5rem 0.5rem;
+    border-radius: 1rem;
   }
 
-  .why-invisalign-card {
-    min-height: 200px;
-    max-height: none;
+  .why-invisalign-title {
+    font-size: 2rem;
+  }
+
+  .why-invisalign-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .why-invisalign-card,
+  .why-invisalign-card.span-2,
+  .why-invisalign-card.span-2-row {
+    grid-column: span 1;
+    grid-row: auto;
+    height: auto;
+    align-self: stretch;
   }
 }
 
@@ -227,6 +265,7 @@
   gap: 1.25rem;
   margin-bottom: var(--spacing-md);
 }
+
 .review-logo {
   height: 40px;
   width: auto;
@@ -299,6 +338,10 @@
    4. PROCESS  (horizontal auto-scroll carousel)
 ===================================================================== */
 
+.process {
+  background-color: var(--clr-bg-secondary);
+}
+
 .process-heading {
   font-size: var(--fs-700, 3rem);
 }
@@ -370,7 +413,7 @@
    5. COMMITMENT
 ===================================================================== */
 .commitment {
-  background: var(--clr-bg);
+  background: var(--clr-bg-secondary);
 }
 
 
@@ -525,7 +568,7 @@
   text-align: center;
 }
 
-.slide-images > img {
+.slide-images>img {
   max-width: 100%;
 }
 
@@ -553,19 +596,25 @@
   display: flex;
   align-items: center;
 }
+
 .carousel-slides {
   display: flex;
   overflow: hidden;
-  width: 900px; /* Adjust as needed */
+  width: 900px;
+  /* Adjust as needed */
 }
+
 .carousel-slide {
   min-width: 410px;
   margin: 0 10px;
   flex-shrink: 0;
-  display: none; /* Hide all by default */
+  display: none;
+  /* Hide all by default */
 }
+
 .carousel-slide.active {
-  display: block; /* Show active slides */
+  display: block;
+  /* Show active slides */
 }
 
 .review-dots.review-dots-invisalign {
@@ -646,6 +695,7 @@
     flex-direction: column;
     height: auto;
   }
+
   .hero-img-wrap,
   .hero-content {
     flex: none;
@@ -654,6 +704,7 @@
     height: 50vh;
     min-width: 0;
   }
+
   .hero-img {
     height: 100%;
   }
@@ -665,6 +716,7 @@
   opacity: 1;
   transition: background 0.2s;
 }
+
 .hero-carousel .swiper-pagination-bullet-active {
   background: #00b6e3;
 }
@@ -673,4 +725,55 @@
   width: 100% !important;
   max-width: 100% !important;
   min-width: 0 !important;
+}
+
+.card-1 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.card-2 {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.card-3 {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  display: flex;
+  justify-content: center;
+}
+
+.card-4 {
+  grid-column: 4 / span 2;
+  grid-row: 1;
+  align-self: start;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-5 {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  align-self: start;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-6 {
+  grid-column: 4;
+  grid-row: 2 / span 2;
+}
+
+.card-7 {
+  grid-column: 5;
+  grid-row: 2 / span 2;
 }
