@@ -92,6 +92,10 @@
 /*==============================================================================
   3. Implant Categories Tabs Section
 ==============================================================================*/
+.implant-content {
+  background-color: var(--clr-bg-secondary);
+}
+
 .implant-cats {
   margin: 0 auto;
   max-width: 1400px;

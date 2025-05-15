@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="State of the art dental care services. Professional dental treatments, cosmetic dentistry, and emergency dental care."
-    />
-    <meta name="theme-color" content="#0a938d" />
-    <title>The Dental Fix</title>
-    <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/components/navbar.css" />
-    <link rel="stylesheet" href="/css/components/footer.css" />
-    <link rel="stylesheet" href="/css/pages/contact.css" />
-  </head>
 
-  <body>
-    <!-- Navbar placeholder -->
-    <div id="navbar-placeholder"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="State of the art dental care services. Professional dental treatments, cosmetic dentistry, and emergency dental care." />
+  <meta name="theme-color" content="#0a938d" />
+  <title>The Dental Fix</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/components/navbar.css" />
+  <link rel="stylesheet" href="/css/components/footer.css" />
+  <link rel="stylesheet" href="/css/pages/contact.css" />
+</head>
+
+<body>
+  <!-- Navbar placeholder -->
+  <div id="navbar-placeholder"></div>
     <section class="contact-hero-wrap">
       <div class="contact-hero-content">
         <span class="contact-hero-label">Contact us</span>
@@ -61,9 +54,9 @@
       </div>
     </section>
     <!-- End contact hero section -->
-    <main>
-      <section class="container contact-section">
-        <div class="contact-info-list">
+  <main>
+    <section class="container contact-section">
+      <!-- <div class="contact-info-list">
           <div class="contact-info-item">
             <span class="contact-info-icon" aria-hidden="true">&#x1F4CD;</span>
             <span
@@ -80,83 +73,49 @@
             <span class="contact-info-icon" aria-hidden="true">&#x2709;</span>
             <span>dentalfix@gmail.com</span>
           </div>
-        </div>
-        <div class="contact-content-wrap">
-          <form
-            class="contact-form contact-form-grid"
-            action="https://formspree.io/f/your-form-id"
-            method="POST"
-          >
-            <div class="contact-form-row">
-              <div class="contact-field">
-                <label for="first-name">First Name</label>
-                <input
-                  type="text"
-                  id="first-name"
-                  name="first-name"
-                  class="contact-input"
-                />
+        </div> -->
+      <div class="contact-content-wrap">
+        <div class="contact-form contact-form-grid">
+          <div class="">
+            <section class="contact-hours">
+              <h2 class="contact-info-title highlight">Opening Hours</h2>
+              <div class="contact-hours-group">
+                <div class="contact-hours-row">
+                  <!-- <span class="contact-hours-day strong">Monday &mdash; Friday</span> -->
+                  <span class="contact-hours-time">10:00 AM &mdash; 2:00 PM</span>
+                  <span class="contact-hours-time">5:00 AM &mdash; 9:00 PM</span>
+                </div>
+                <div class="contact-hours-row">
+                  <span class="contact-hours-day strong">Thursday closed</span>
+                  <!-- <span class="contact-hours-time">5:00 AM &mdash; 9:00 PM</span> -->
+                </div>
               </div>
-              <div class="contact-field">
-                <label for="last-name">Last Name</label>
-                <input
-                  type="text"
-                  id="last-name"
-                  name="last-name"
-                  class="contact-input"
-                />
+            </section>
+            <section class="contact-address">
+              <h2 class="contact-info-title highlight">Our address</h2>
+              <div class="contact-address-details">
+                <div class="contact-address-name strong">Office: 209, Marvel Sangria Boulevard,</div>
+                <div>Above TR Wines NIBM,</div>
+                <div>Corianthian Club Road,</div>
+                <div>Undri, Pune-411060, Maharashtra.</div>
               </div>
-            </div>
-            <div class="contact-form-row">
-              <div class="contact-field">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="contact-input"
-                />
-              </div>
-              <div class="contact-field">
-                <label for="phone">Phone</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  class="contact-input"
-                />
-              </div>
-            </div>
-            <div class="contact-field">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                class="contact-input"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn contact-btn">Get In Touch</button>
-          </form>
-          <div class="contact-map-embed">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d121102.2426785113!2d73.82574086424472!3d18.46348790008464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bc2ebbf0d68a119%3A0x26d783006d5e0cf!2soffice%20209%2C%20marvel%20sangria%20boulevard%2C%20above%20tr%20wines%20NIBM%2C%20corianthian%2C%20club%20road%2C%20Undri%2C%20Pune%2C%20Maharashtra%20411060!3m2!1d18.4635057!2d73.90814259999999!5e0!3m2!1sen!2sin!4v1746446881184!5m2!1sen!2sin"
-              width="100%"
-              height="400"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title=""
-            ></iframe>
+            </section>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="contact-map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d121102.2426785113!2d73.82574086424472!3d18.46348790008464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bc2ebbf0d68a119%3A0x26d783006d5e0cf!2soffice%20209%2C%20marvel%20sangria%20boulevard%2C%20above%20tr%20wines%20NIBM%2C%20corianthian%2C%20club%20road%2C%20Undri%2C%20Pune%2C%20Maharashtra%20411060!3m2!1d18.4635057!2d73.90814259999999!5e0!3m2!1sen!2sin!4v1746446881184!5m2!1sen!2sin"
+            width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title=""></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Footer placeholder -->
-    <div id="footer-placeholder"></div>
+  <!-- Footer placeholder -->
+  <div id="footer-placeholder"></div>
 
-    <script src="/js/include-components.js"></script>
-  </body>
+  <script src="/js/include-components.js"></script>
+</body>
+
 </html>
