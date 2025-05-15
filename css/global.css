@@ -5,6 +5,8 @@
 /* ========== CUSTOM PROPERTIES (VARIABLES) ========== */
 :root {
   /* Colors */
+  --clr-teal: #1b898b;
+
   --clr-bg-btn: #d4af37;
   --clr-bg-btn-hover: #b38e2e;
   --clr-bg: #f9f6ee;

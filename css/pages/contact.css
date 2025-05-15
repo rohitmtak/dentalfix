@@ -258,9 +258,9 @@
   align-items: stretch;
   justify-content: center;
   gap: var(--spacing-xl);
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: var(--spacing-2xl) var(--spacing-md) 0 var(--spacing-md);
+  /* padding: var(--spacing-2xl) var(--spacing-md) 0 var(--spacing-md); */
 }
 
 @media (min-width: 900px) {
@@ -268,9 +268,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-height: 520px;
+    min-height: 500px;
     padding-top: var(--spacing-3xl);
-    padding-bottom: var(--spacing-xl);
   }
 }
 
@@ -309,6 +308,7 @@
 
 .contact-hero-details {
   display: flex;
+  flex-direction: column;
   gap: var(--spacing-xl);
   margin-top: var(--spacing-md);
 }
@@ -356,7 +356,7 @@
   flex: 1 1 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   min-width: 320px;
   max-width: 700px;
   padding-left: var(--spacing-xl);
@@ -372,7 +372,7 @@
 .contact-hero-img {
   width: 100%;
   max-width: 600px;
-  height: auto;
+  height: 500px;
   border-radius: 3rem;
   object-fit: cover;
   box-shadow: 0 4px 32px 0 rgba(33, 86, 249, 0.08);
@@ -481,7 +481,7 @@
   padding: 3rem 2.5rem;
   align-items: center;
   max-width: 1280px;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 .contact-hero-left {
