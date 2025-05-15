@@ -3,7 +3,7 @@
 .site-footer {
   background: #121f30;
   padding-top: 5rem;
-  color: var(--clr-black);
+  color: var(--clr-bg-secondary);
 }
 
 .footer-grid {
