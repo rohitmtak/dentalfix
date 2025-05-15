@@ -777,3 +777,338 @@
   grid-column: 5;
   grid-row: 2 / span 2;
 }
+
+/* ========= INVISALIGN SMILE QR SECTION (UPDATED FOR SITE STYLE) ========= */
+.invisalign-qr-section {
+  background: var(--clr-bg);
+  padding-block: var(--spacing-2xl);
+}
+.invisalign-qr-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+.invisalign-qr-left {
+  flex: 1 1 380px;
+  min-width: 320px;
+  max-width: 540px;
+}
+.invisalign-qr-heading {
+  font-size: var(--fs-5xl);
+  font-weight: 700;
+  color: var(--clr-text-primary);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.15;
+}
+.invisalign-qr-heading .text-primary {
+  color: var(--clr-bg-btn);
+}
+.invisalign-qr-subtitle {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  color: var(--clr-text-primary);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: -0.01em;
+}
+.invisalign-qr-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+.invisalign-qr-step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  font-size: var(--fs-lg);
+  color: var(--clr-text-secondary);
+  font-weight: 500;
+}
+.invisalign-qr-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: var(--clr-bg-btn);
+  color: var(--clr-bg-secondary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.invisalign-qr-note {
+  display: block;
+  font-size: var(--fs-sm);
+  color: var(--clr-text-secondary);
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+.invisalign-qr-right {
+  flex: 1 1 340px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.invisalign-qr-phone-mockup {
+  position: relative;
+  width: 320px;
+  max-width: 100%;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.invisalign-qr-phone-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+.invisalign-qr-code-wrap {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--clr-bg-secondary);
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.invisalign-qr-code-img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .invisalign-qr-flex {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    align-items: stretch;
+  }
+  .invisalign-qr-left, .invisalign-qr-right {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .invisalign-qr-phone-mockup {
+    width: 100%;
+    max-width: 340px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .invisalign-qr-section {
+    padding-block: var(--spacing-lg) var(--spacing-md);
+  }
+  .invisalign-qr-heading {
+    font-size: var(--fs-2xl);
+  }
+  .invisalign-qr-phone-mockup {
+    max-width: 98vw;
+  }
+  .invisalign-qr-code-img {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+/* ========== FAQ SECTION ========== */
+
+.invisalign-faq-section {
+  padding-block: var(--spacing-2xl);
+  background: var(--clr-bg-secondary);
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-header-cta {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+  
+.faq-header {
+  /* text-align: center; */
+  margin-bottom: var(--spacing-xl);
+}
+
+.faq-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--clr-text);
+}
+
+.faq-desc {
+  font-size: 1.25rem;
+  color: var(--clr-text-secondary);
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.faq-list {
+  max-width: 700px;
+  /* margin: 0 auto var(--spacing-2xl) auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 50%;
+  padding-inline: var(--spacing-xl);
+}
+
+.faq-item {
+  background: var(--clr-bg);
+  border-radius: 1rem;
+  border: 1px solid var(--clr-border, #e0e0e0);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.faq-item[open] {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.faq-question {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--clr-text);
+  cursor: pointer;
+  padding: 1.25rem 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  content: '\25BC';
+  font-size: 1rem;
+  margin-left: auto;
+  transition: transform 0.2s;
+}
+
+.faq-item[open] .faq-question::after {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: var(--clr-text-secondary);
+  padding-bottom: 1.25rem;
+  padding-right: 1rem;
+  margin-top: -0.5rem;
+  line-height: 1.6;
+}
+
+.faq-cta {
+  /* text-align: center; */
+  margin-top: var(--spacing-xl);
+  /* border-radius: var(--radius-lg);
+  background-color: var(--clr-bg); */
+}
+
+.faq-cta-inner-container {
+  border-radius: var(--radius-lg);
+  background-color: var(--clr-bg);
+  padding: var(--spacing-lg);
+}
+
+.faq-cta-title {
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--clr-text);
+}
+
+.faq-cta-desc {
+  font-size: var(--fs-lg);
+  color: var(--clr-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .faq-list {
+    padding: 0 0.5rem;
+  }
+  .faq-title {
+    font-size: 1.5rem;
+  }
+  .faq-cta-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* ========== FINAL CTA SECTION ========== */
+
+.invisalign-cta-section {
+  padding-block: var(--spacing-md);
+  background: var(--clr-bg, #fff);
+}
+
+.invisalign-cta-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-2xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.invisalign-cta-left {
+  flex: 1 1 0;
+}
+
+.invisalign-cta-title {
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--clr-text);
+  margin-bottom: 0;
+}
+
+.invisalign-cta-right {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.invisalign-cta-desc {
+  font-size: 1.15rem;
+  color: var(--clr-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.invisalign-cta-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .invisalign-cta-grid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xl);
+  }
+  .invisalign-cta-right {
+    align-items: flex-start;
+  }
+  .invisalign-cta-desc {
+    text-align: left;
+  }
+}
