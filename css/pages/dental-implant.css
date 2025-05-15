@@ -555,7 +555,7 @@
 /* ========== FINAL CTA SECTION ========== */
 
 .implant-cta-section {
-  padding-block: var(--spacing-2xl);
+  padding-block: var(--spacing-md);
   background: var(--clr-bg, #fff);
 }
 
