@@ -20,7 +20,7 @@
   align-items: center;
   gap: 7rem;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 2rem auto;
   /* padding: 0 3vw; */
   height: 100%;
 }
@@ -169,7 +169,7 @@
   font-size: 1.25rem;
   color: var(--clr-text);
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 .values-grid {
@@ -185,23 +185,22 @@
   background: transparent;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.5rem;
   padding: 0 1rem 0 0;
 }
 
 .value-icon-wrap {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 0.5rem;
+  width: 55px;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
 .value-icon {
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
   object-fit: contain;
   /* opacity: 0.6; */
   color: var(--clr-bg-btn);
@@ -221,6 +220,8 @@
   color: var(--clr-text-secondary);
   line-height: 1.7;
   max-width: 520px;
+  text-align: center;
+  margin-inline: auto;
 }
 
 /* ===========================================================
