@@ -1,4 +1,7 @@
 /* Contact page: only layout tweaks, all color/font/spacing/radius/button from global.css */
+.section {
+  background: var(--clr-bg-secondary)
+}
 
 .contact-hero {
   text-align: center;
@@ -475,7 +478,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
-  background: var(--clr-bg-secondary);
+  background: var(--clr-bg);
   border-radius: 2rem;
   box-shadow: 0 4px 32px 0 rgba(33, 86, 249, 0.08);
   padding: 3rem 2.5rem;

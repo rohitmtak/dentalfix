@@ -8,11 +8,17 @@
   }
   
   .services-section {
+    background: var(--clr-bg-secondary);
+    width: 100%;
+    padding: 3rem 0;
+  }
+  
+  .services-section-wrapper {
     display: grid;
     grid-template-columns: var(--services-sidebar-width) 1fr;
     gap: var(--services-gap);
     max-width: 1200px;
-    margin: 3rem auto;
+    margin: 0 auto;
     align-items: flex-start;
   }
   
@@ -123,7 +129,7 @@
   }
   
   @media (max-width: 900px) {
-    .services-section {
+    .services-section-wrapper {
       grid-template-columns: 1fr;
       gap: 2rem;
     }
