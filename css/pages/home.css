@@ -445,7 +445,7 @@
   font-size: clamp(2.5rem, 5vw, 3rem);
   font-weight: 700;
   line-height: 1.15;
-  color: #181c1f;
+  color: var(--clr-text-primary);
 }
 
 .text-highlight {
@@ -1032,9 +1032,6 @@
 /* >>>>>>>>>>>>>> Image Marquee <<<<<<<<<<<<<< */
 .marquee {
   background: #ffffff;
-}
-
-.marquee {
   overflow: hidden;
   padding: 3rem 0;
 }

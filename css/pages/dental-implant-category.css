@@ -31,6 +31,7 @@
   background: var(--clr-bg, #f7fcfc);
   text-align: center;
   position: relative;
+  border-bottom: 1px solid #cfd8dc;
 }
 .implants-hero-icon-wrap {
   display: flex;
@@ -94,6 +95,7 @@
 ==============================================================================*/
 .implant-content {
   background-color: var(--clr-bg-secondary);
+  padding-bottom: var(--spacing-2xl);
 }
 
 .implant-cats {
@@ -135,10 +137,10 @@
   display: flex;
   /* flex-wrap: wrap; */
   gap: 1.5rem;
-  justify-content: center;
+  justify-content: space-between;
   border-bottom: 1px solid #cfd8dc;
-  border-top: 1px solid #cfd8dc;
-  margin-bottom: 2.5rem;
+  /* border-top: 1px solid #cfd8dc; */
+  margin-bottom: 4.5rem;
 }
 .cat-tab {
   background: none;
