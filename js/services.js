@@ -1,6 +1,6 @@
 const serviceData = {
   root: {
-    title: "Root Canal",
+    title: "Root Canal Treatment",
     img: "/assets/images/dental-implant/473.jpg",
     aboutTitle: "About Root Canal",
     aboutText: "Content for Root...",

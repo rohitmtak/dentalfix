@@ -60,7 +60,7 @@
 .implants-hero-desc {
   font-size: clamp(1.1rem, 2vw, 1.5rem);
   color: var(--clr-text-secondary, #23272a);
-  max-width: 700px;
+  max-width: 1050px;
   margin: 0 auto 4rem;
 }
 .implants-hero-line {

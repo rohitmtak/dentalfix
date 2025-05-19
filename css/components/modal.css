@@ -13,7 +13,7 @@
 
 .modal {
   background: var(--clr-bg);
-  border-radius: var(--radius-xl);
+  border-radius: 2rem 0 0 2rem;
   padding: 2.5rem;
   max-width: 800px;
   width: 90%;
@@ -43,14 +43,14 @@
 }
 
 .modal-header {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .modal-title {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--clr-text-primary);
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .modal-subtitle {
@@ -75,6 +75,20 @@
   color: var(--clr-text-secondary);
   line-height: 1.7;
   margin-bottom: 1.5rem;
+}
+
+.modal-achievements {
+  margin-top: 1rem;
+}
+
+.modal-achievements h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--clr-text-primary);
+}
+
+.modal-achievements ul {
+  color: var(--clr-text-secondary)
 }
 
 .modal-specialties {

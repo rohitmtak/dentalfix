@@ -473,7 +473,7 @@
 .expertise-hero-list i {
   color: var(--clr-bg-btn-hover);
   margin-right: 0.75em;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   vertical-align: middle;
 }
 
@@ -1139,12 +1139,12 @@
 
 .modern-services-card-btn {
   background: var(--clr-bg-btn);
-  color: var(--clr-text-primary);
+  color: var(--clr-bg-secondary);
   font-size: 1.08rem;
   font-weight: 600;
   border: none;
   border-radius: 2rem;
-  padding: 0.8rem 2.2rem;
+  padding: 0.625rem 1.5rem;
   text-decoration: none;
   transition: background 0.18s, color 0.18s;
   box-shadow: 0 1px 4px 0 rgba(23, 99, 106, 0.04);
