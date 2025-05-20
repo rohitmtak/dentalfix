@@ -1,8 +1,8 @@
 :root {
-    --services-sidebar-width: 380px;
+    --services-sidebar-width: 450px;
     --services-radius: var(--radius-lg);
     --services-shadow: 0 2px 16px rgba(0,0,0,0.08);
-    --services-gap: var(--spacing-xl);
+    --services-gap: var(--spacing-2xl);
     --services-img-radius: var(--radius-lg);
     --services-img-max-width: 600px;
   }
@@ -10,23 +10,20 @@
   .services-section {
     background: var(--clr-bg-secondary);
     width: 100%;
-    padding: var(--spacing-xl) 0;
   }
   
   .services-section-wrapper {
     display: grid;
     grid-template-columns: var(--services-sidebar-width) 1fr;
     gap: var(--services-gap);
-    max-width: var(--container-width);
     margin: 0 auto;
     align-items: flex-start;
-    padding-inline: var(--spacing-lg);
   }
   
   .services-sidebar {
     background: var(--clr-bg-secondary);
     border-radius: var(--services-radius);
-    box-shadow: var(--services-shadow);
+    border: 2px solid #d6cfc9;
     padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
     display: flex;
     flex-direction: column;
@@ -36,7 +33,7 @@
   }
   
   .services-sidebar-title {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-4xl);
     font-weight: 600;
     margin-bottom: var(--spacing-lg);
     text-align: center;
@@ -64,8 +61,7 @@
   }
   
   .services-list-item:hover {
-    background: var(--clr-bg-btn);
-    color: var(--clr-bg);
+    color: var(--clr-bg-btn);
   }
   
   .services-list-arrow {
@@ -76,7 +72,7 @@
   }
   
   .services-list-item:hover .services-list-arrow {
-    color: var(--clr-bg);
+    color: var(--clr-bg-btn);
   }
   
   .services-main {
@@ -112,8 +108,7 @@
   
   .services-about {
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 775px;
   }
   
   .services-about-title {
@@ -139,20 +134,19 @@
   
   .services-symptoms-list {
     list-style-type: none;
-    padding-left: var(--spacing-xs);
     margin: var(--spacing-sm) 0 var(--spacing-lg);
   }
   
   .services-symptoms-list li {
     position: relative;
     padding-left: var(--spacing-lg);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
     line-height: 1.6;
   }
   
   .services-symptoms-list li::before {
     content: "•";
-    color: var(--clr-bg-btn);
+    color: var(--clr-text-primary);
     font-size: var(--fs-2xl);
     position: absolute;
     left: 0;
@@ -222,17 +216,17 @@
     font-size: var(--fs-lg);
     color: var(--clr-text-primary);
     cursor: pointer;
-    transition: var(--trans-fast);
+    /* transition: transform var(--trans-fast); */
   }
   
-  .services-faq-question:hover {
-    background-color: var(--clr-bg);
-  }
+  /* .services-faq-question:hover {
+    transform: translateY(-4px);
+  } */
   
-  .services-faq-question.active {
+  /* .services-faq-question.active {
     background-color: var(--clr-bg);
     border-bottom: 1px solid var(--clr-border);
-  }
+  } */
   
   .services-faq-icon {
     font-size: var(--fs-2xl);
@@ -253,7 +247,7 @@
   }
   
   .services-faq-answer:not([hidden]) {
-    padding: var(--spacing-md);
+    padding: 0 var(--spacing-md) var(--spacing-md);
     max-height: 500px;
   }
   
@@ -261,7 +255,7 @@
     color: var(--clr-text-secondary);
     line-height: 1.8;
     margin: 0;
-    font-size: var(--fs-lg);
+    font-size: var(--fs-base);
   }
   
   

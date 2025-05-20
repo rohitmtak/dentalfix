@@ -8,8 +8,6 @@ const serviceData = {
       "Sudden sensitivity to hot or cold that lingers",
       "Swollen or tender gums near a tooth",
       "Darkening or discoloration of the tooth",
-      "Pimples or pus formation on the gums",
-      "Cracked or chipped teeth with pain",
       "Bad breath or a foul taste in the mouth"
     ],
     procedure: [
@@ -65,10 +63,8 @@ const serviceData = {
       "Bleeding gums while brushing or flossing",
       "Yellowish or brownish deposits near the gumline",
       "Persistent bad breath (halitosis)",
-      "Gums that are swollen, red, or tender",
       "Loose teeth or gum recession",
-      "Visible stains from tea, coffee, tobacco, or wine",
-      "Dry mouth or sticky feeling despite brushing"
+      "Visible stains from tea, coffee, tobacco, or wine"
     ],
     procedure: [
       {
@@ -119,7 +115,6 @@ const serviceData = {
       "Yellowed or stained teeth",
       "Discoloration from smoking or pan masala",
       "Stains caused by tea, coffee, red wine, or soft drinks",
-      "Dullness in your smile before an event (weddings, interviews, shoots)",
       "A desire for a more confident, radiant smile",
       "Internal staining from medications or trauma (may need different options)"
     ],
@@ -176,11 +171,8 @@ const serviceData = {
       "Severe tooth decay or infection",
       "Persistent pain in the back of your mouth",
       "Swollen gums or jaw stiffness near the molars",
-      "Gum infection or abscess around a tooth",
       "Impacted wisdom teeth (trapped under gum or bone)",
-      "Overcrowding before orthodontic treatment",
-      "Fractured or broken teeth beyond repair",
-      "Cysts or damage to neighboring teeth due to wisdom tooth growth"
+      "Fractured or broken teeth beyond repair"
     ],
     procedure: [
       {
@@ -225,8 +217,7 @@ const serviceData = {
       "There's food getting stuck in a particular tooth frequently",
       "You feel a rough edge on your tooth with your tongue",
       "You're replacing old metal (amalgam) fillings for aesthetic reasons",
-      "You've chipped or fractured a front or back tooth",
-      "Tooth sensitivity or minor discomfort while chewing"
+      "You've chipped or fractured a front or back tooth"
     ],
     procedure: [
       {
@@ -283,12 +274,9 @@ const serviceData = {
     brief: "Single Visit Root Canal Treatment (RCT) is a modern, efficient procedure where the entire root canal therapy — including cleaning, shaping, disinfecting, and sealing the tooth — is completed in just one appointment.\n\nThis technique is ideal for patients with a busy schedule or those seeking quick pain relief. With advanced tools like rotary endodontics and digital imaging, the procedure is faster, precise, and less traumatic — often completed in 60–90 minutes.",
     symptoms: [
       "Sudden, intense tooth pain",
-      "Sensitivity to hot or cold that lingers",
       "Swelling near the affected tooth",
       "Discolored or darkened tooth",
       "Deep decay reaching the pulp",
-      "Infection or pus discharge from gums",
-      "Broken or cracked tooth with nerve exposure",
       "Recurrent pain in an already filled tooth"
     ],
     procedure: [
@@ -350,8 +338,7 @@ const serviceData = {
       "Large cavities or fillings that compromise tooth strength",
       "One or more missing teeth",
       "Shifting of surrounding teeth due to a gap",
-      "A tooth with cosmetic imperfections (discoloration or shape issues)",
-      "Weak or cracked teeth at risk of breaking"
+      "A tooth with cosmetic imperfections (discoloration or shape issues)"
     ],
     procedure: [
       {
@@ -394,10 +381,8 @@ const serviceData = {
       "Uneven, crooked, or misaligned teeth",
       "Gaps between teeth or crowding",
       "Discolored, stained, or dull teeth",
-      "Gummy smile or uneven gum line",
       "Broken, chipped, or worn-out teeth",
       "Short or irregularly shaped teeth",
-      "Past dental work that looks unnatural or outdated",
       "A desire to enhance your overall facial aesthetics"
     ],
     procedure: [
@@ -453,10 +438,7 @@ const serviceData = {
       "Discolored or permanently stained teeth",
       "Chipped, cracked, or worn-out front teeth",
       "Minor gaps or spaces between teeth",
-      "Slightly crooked or misaligned teeth",
       "Uneven or irregular tooth shapes",
-      "Teeth that appear too short or small",
-      "Previous dental work that affects smile aesthetics",
       "A desire for a symmetrical, uniform, whiter smile"
     ],
     procedure: [
@@ -512,10 +494,8 @@ const serviceData = {
       "Crooked or crowded teeth",
       "Gaps between teeth",
       "Overbite, underbite, or crossbite",
-      "Protruding front teeth",
       "Speech difficulty or lisping due to misaligned teeth",
       "Clicking jaw or facial imbalance",
-      "Trouble chewing or biting food evenly",
       "Shifting teeth after childhood"
     ],
     procedure: [
@@ -620,7 +600,6 @@ const serviceData = {
     brief: "Dental implants are permanent, natural-looking replacements for missing teeth. Made from biocompatible titanium, the implant is surgically placed into the jawbone to function like a tooth root. A crown is then attached on top, restoring the tooth's function and aesthetics.\n\nDental implants are the gold standard for tooth replacement — providing durability, stability, and a long-term solution that feels and functions like your real teeth.",
     symptoms: [
       "One or more missing teeth",
-      "Difficulty chewing or speaking due to gaps",
       "Jawbone deterioration from missing tooth roots",
       "Ill-fitting dentures that slip or cause discomfort",
       "Adjacent teeth drifting or becoming loose",
@@ -679,8 +658,6 @@ const serviceData = {
     symptoms: [
       "Multiple missing or damaged teeth",
       "Severely worn-down teeth due to grinding (bruxism)",
-      "Chronic jaw pain or TMJ disorders",
-      "Difficulty chewing or speaking clearly",
       "Collapsed bite or changes in facial structure",
       "Multiple failing restorations (crowns, fillings, bridges)",
       "Gum disease and tooth mobility",
@@ -733,8 +710,6 @@ const serviceData = {
     brief: "Dentures are removable dental appliances used to replace missing teeth and surrounding tissues. Depending on how many teeth are missing, your dentist may recommend:\n\nComplete Dentures – when all teeth are missing in the upper or lower arch.\n\nPartial Dentures – when some natural teeth remain and need support or gap-filling.\n\nToday's dentures are natural-looking, custom-designed, and more comfortable than ever. They not only restore your smile but also improve speech, chewing ability, and facial appearance.",
     symptoms: [
       "Complete or multiple missing teeth",
-      "Difficulty chewing or speaking clearly",
-      "Sunken cheeks or collapsed facial structure",
       "Jaw pain from uneven bite or shifting teeth",
       "Loose or failing bridges or crowns",
       "Desire for a removable, non-surgical tooth replacement option",
@@ -783,9 +758,7 @@ const serviceData = {
       "Gaps, crowding, or early signs of misalignment",
       "Bleeding or swollen gums",
       "Thumb-sucking, mouth breathing, or tongue thrusting",
-      "Delayed tooth eruption or early tooth loss",
-      "Dental trauma from a fall or injury",
-      "Fear or anxiety about dental visits"
+      "Delayed tooth eruption or early tooth loss"
     ],
     procedure: [
       {
@@ -845,13 +818,12 @@ function renderServiceContent(data) {
     <p class="services-about-text">${data.brief}</p>
 
     <h2 class="services-about-title">Signs and Symptoms</h2>
-    <p class="services-about-text">You might need a root canal if you experience:</p>
     <ul class="services-about-text services-symptoms-list">${data.symptoms.map(item => `<li>${item}</li>`).join('')}</ul>
 
     <h2 class="services-about-title">Procedure</h2>
     <div class="services-procedure">
       ${data.procedure.map((step, index) => {
-        return `
+    return `
         <div class="services-procedure-step">
           <div class="services-procedure-content">
             <h3 class="services-procedure-step-title">
@@ -861,7 +833,7 @@ function renderServiceContent(data) {
           </div>
         </div>
       `;
-      }).join('')}
+  }).join('')}
     </div>
 
     <h2 class="services-about-title">Frequently Asked Questions</h2>
@@ -885,10 +857,10 @@ function renderServiceContent(data) {
     button.addEventListener('click', () => {
       const expanded = button.getAttribute('aria-expanded') === 'true';
       button.setAttribute('aria-expanded', !expanded);
-      
+
       const answer = button.nextElementSibling;
       const icon = button.querySelector('.services-faq-icon');
-      
+
       if (expanded) {
         answer.hidden = true;
         icon.textContent = '+';
