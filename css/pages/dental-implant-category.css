@@ -27,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-block: clamp(4rem, 12vw, 8rem) clamp(2rem, 8vw, 4rem);
+  padding-block: clamp(4rem, 12vw, 5rem) clamp(2rem, 8vw, 4rem);
   background: var(--clr-bg, #f7fcfc);
   text-align: center;
   position: relative;
@@ -38,16 +38,16 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 2.5rem;
-}
-.implants-hero-icon {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   width: clamp(80px, 12vw, 120px);
   height: clamp(80px, 12vw, 120px);
   border-radius: 50%;
   background: var(--clr-bg-btn);
+}
+.implants-hero-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 12px rgba(23,102,217,0.08);
   padding: 1.5rem;
 }
 .implants-hero-title {
@@ -56,12 +56,13 @@
   margin-bottom: 1.5rem;
   color: var(--clr-text, #181c1f);
   letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 .implants-hero-desc {
   font-size: clamp(1.1rem, 2vw, 1.5rem);
   color: var(--clr-text-secondary, #23272a);
-  max-width: 1050px;
-  margin: 0 auto 4rem;
+  max-width: 900px;
+  margin-bottom: var(--spacing-2xl);
 }
 .implants-hero-line {
   width: 85vw;
@@ -171,7 +172,7 @@
 
 .cat-content {
   display: none;
-  animation: fadeIn 0.4s;
+  animation: fadeIn 1s;
 }
 .cat-content.active {
   display: block;
