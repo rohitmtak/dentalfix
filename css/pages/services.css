@@ -137,6 +137,17 @@
     margin-bottom: var(--spacing-md);
   }
   
+  /* Add styles for paragraphs within services-about-text */
+  .services-about-text p {
+    margin-bottom: var(--spacing-md);  /* Space between paragraphs */
+    padding: var(--spacing-sm);        /* Internal padding */
+  }
+  
+  /* Remove margin from last paragraph to avoid extra space */
+  .services-about-text p:last-child {
+    margin-bottom: 0;
+  }
+  
   .services-symptoms-list {
     list-style-type: none;
     padding-left: var(--spacing-xs);
