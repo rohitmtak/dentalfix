@@ -2,7 +2,7 @@ const serviceData = {
   'root-canal': {
     title: "Root Canal Treatment",
     img: "/assets/images/dental-implant/1986.jpg",
-    brief: "A Root Canal Treatment (RCT) is a dental procedure that saves a severely infected or decayed tooth by removing the infected pulp, cleaning the canals, and sealing them. It's a common, safe, and effective solution that prevents the need for tooth extraction and helps preserve your natural smile. Modern root canal procedures are virtually painless, thanks to advanced technology and local anesthesia. Most patients report feeling more relief than discomfort.",
+    brief: "A Root Canal Treatment (RCT) is a dental procedure that saves a severely infected or decayed tooth by removing the infected pulp, cleaning the canals, and sealing them. It's a common, safe, and effective solution that prevents the need for tooth extraction and helps preserve your natural smile.\n\n Modern root canal procedures are virtually painless, thanks to advanced technology and local anesthesia. Most patients report feeling more relief than discomfort.",
     symptoms: [
       "Persistent toothache (especially while chewing or applying pressure)",
       "Sudden sensitivity to hot or cold that lingers",
@@ -815,7 +815,9 @@ function renderServiceContent(data) {
   const aboutSection = document.querySelector(".services-about");
   aboutSection.innerHTML = `
     <h2 class="services-about-title">Brief Introduction</h2>
-    <p class="services-about-text">${data.brief}</p>
+    <div class="services-about-text">
+      ${data.brief.split('\n\n').map(paragraph => `<p>${paragraph}</p>`).join('')}
+    </div>
 
     <h2 class="services-about-title">Signs and Symptoms</h2>
     <ul class="services-about-text services-symptoms-list">${data.symptoms.map(item => `<li>${item}</li>`).join('')}</ul>
