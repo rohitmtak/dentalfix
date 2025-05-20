@@ -11,12 +11,12 @@
   --ci-sm-h: 180px;
 
   /* Gaps & padding */
-  --ci-gap: var(--spacing-lg);  /* e.g. 2.5rem */
+  --ci-gap: var(--spacing-sm);  /* e.g. 2.5rem */
   --ci-pad: var(--spacing-md);  /* e.g. 1.5rem */
 
   /* Border & radius */
   --ci-border: var(--clr-border) solid 2px;
-  --ci-radius: var(--radius-sm);
+  --ci-radius: var(--radius-md);
 }
 
 /*==============================================================================

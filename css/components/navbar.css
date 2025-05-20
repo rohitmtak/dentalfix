@@ -31,19 +31,21 @@
 }
 
 /* Logo */
-.logo {
+/* .logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-weight: 700;
   font-size: var(--fs-3xl);
   color: var(--clr-text);
-}
+  text-decoration: none;
+} */
 
-.logo img {
-  height: 32px;
+.logo-img {
+  height: 40px;
   width: auto;
   display: block;
+  object-fit: contain;
 }
 
 /* Navigation */
@@ -196,8 +198,8 @@
     font-size: var(--fs-base);
   }
 
-  .logo img {
-    height: 28px;
+  .logo-img {
+    height: 32px;
   }
 
   .nav-right {
