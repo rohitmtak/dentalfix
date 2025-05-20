@@ -6,6 +6,7 @@
   background: var(--clr-bg);
   transition: all var(--trans-fast);
   isolation: isolate;
+  height: 84px;
 }
 
 /* Header wrapper */

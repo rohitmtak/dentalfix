@@ -707,7 +707,7 @@ const serviceData = {
   'dentures': {
     title: "Complete & Partial Dentures",
     img: "/assets/images/dental-implant/dentures.jpg",
-    brief: "Dentures are removable dental appliances used to replace missing teeth and surrounding tissues. Depending on how many teeth are missing, your dentist may recommend:\n\nComplete Dentures – when all teeth are missing in the upper or lower arch.\n\nPartial Dentures – when some natural teeth remain and need support or gap-filling.\n\nToday's dentures are natural-looking, custom-designed, and more comfortable than ever. They not only restore your smile but also improve speech, chewing ability, and facial appearance.",
+    brief: "Dentures are removable dental appliances used to replace missing teeth and surrounding tissues. Depending on how many teeth are missing, your dentist may recommend:\n\n<strong class='first-strong'>Complete Dentures</strong> – when all teeth are missing in the upper or lower arch.\n\n<strong>Partial Dentures</strong> – when some natural teeth remain and need support or gap-filling.\n\nToday's dentures are natural-looking, custom-designed, and more comfortable than ever. They not only restore your smile but also improve speech, chewing ability, and facial appearance.",
     symptoms: [
       "Complete or multiple missing teeth",
       "Jaw pain from uneven bite or shifting teeth",
@@ -878,6 +878,13 @@ function renderServiceContent(data) {
 
 document.querySelectorAll(".services-list-item").forEach((item) => {
   item.addEventListener("click", function () {
+    // Remove 'active' from all items
+    document.querySelectorAll(".services-list-item.active").forEach((el) => {
+      el.classList.remove("active");
+    });
+    // Add 'active' to the clicked item
+    this.classList.add("active");
+    
     const cat = this.getAttribute("data-category");
     const data = serviceData[cat];
     if (!data) return;

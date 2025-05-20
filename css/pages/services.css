@@ -15,7 +15,7 @@
   .services-section-wrapper {
     display: grid;
     grid-template-columns: var(--services-sidebar-width) 1fr;
-    gap: var(--services-gap);
+    gap: 6rem;
     margin: 0 auto;
     align-items: flex-start;
   }
@@ -63,6 +63,11 @@
   .services-list-item:hover {
     color: var(--clr-bg-btn);
   }
+
+  .services-list-item.active {
+    color: var(--clr-bg-btn-hover);
+    font-weight: bold;
+  }
   
   .services-list-arrow {
     font-size: var(--fs-xl);
@@ -73,6 +78,10 @@
   
   .services-list-item:hover .services-list-arrow {
     color: var(--clr-bg-btn);
+  }
+
+  .services-list-item.active .services-list-arrow {
+    color: var(--clr-bg-btn-hover);
   }
   
   .services-main {
@@ -134,13 +143,17 @@
   
   /* Add styles for paragraphs within services-about-text */
   .services-about-text p {
-    margin-bottom: var(--spacing-md);  /* Space between paragraphs */
-    padding: var(--spacing-sm);        /* Internal padding */
+    margin-bottom: var(--spacing-md);
+    /* padding: var(--spacing-sm); */
   }
   
   /* Remove margin from last paragraph to avoid extra space */
   .services-about-text p:last-child {
     margin-bottom: 0;
+  }
+
+  .services-about-text p:has(strong.first-strong) {
+    margin-bottom: var(--spacing-xs);
   }
   
   .services-symptoms-list {
@@ -323,3 +336,41 @@
     }
   }
   
+  /*  */
+  .services-sidebar-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-outer-container {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cta {
+    /* text-align: center; */
+    margin-top: var(--spacing-xl);
+    /* border-radius: var(--radius-lg);
+    background-color: var(--clr-bg); */
+  }
+  
+  .cta-inner-container {
+    border-radius: var(--radius-lg);
+    background-color: var(--clr-bg);
+    padding: var(--spacing-lg);
+  }
+  
+  .cta-title {
+    font-size: var(--fs-2xl);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--clr-text);
+  }
+  
+  .cta-desc {
+    font-size: var(--fs-lg);
+    color: var(--clr-text-secondary);
+    margin-bottom: 1.5rem;
+  }
