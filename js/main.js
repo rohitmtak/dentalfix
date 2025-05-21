@@ -320,3 +320,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 250);
   });
 });
+
+// WhatsApp Button
+document.addEventListener('DOMContentLoaded', function () {
+  // WhatsApp button logic
+  const whatsappBtn = document.getElementById('whatsappBtn');
+  const heroSection = document.querySelector('.hero-carousel-container');
+
+  window.addEventListener('scroll', function () {
+    const heroHeight = heroSection.offsetHeight;
+    if (window.scrollY > heroHeight) {
+      whatsappBtn.classList.remove('d-none');
+    } else {
+      whatsappBtn.classList.add('d-none');
+    }
+  });
+});

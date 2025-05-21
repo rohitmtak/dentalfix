@@ -706,6 +706,20 @@
   height: 100%;
 }
 
+.hero-heading {
+  font-size: 4rem;
+  line-height: 1.15;
+}
+
+.provider-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-block: var(--spacing-lg);
+  font-size: var(--fs-lg);
+}
+
 @media (max-width: 900px) {
   .swiper-slide.hero-slide {
     flex-direction: column;
