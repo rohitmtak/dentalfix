@@ -1,7 +1,7 @@
 const serviceData = {
   'root-canal': {
     title: "Root Canal Treatment",
-    img: "/assets/images/dental-implant/1986.jpg",
+    img: "/assets/images/services/root-canal.jpg",
     brief: "A Root Canal Treatment (RCT) is a dental procedure that saves a severely infected or decayed tooth by removing the infected pulp, cleaning the canals, and sealing them. It's a common, safe, and effective solution that prevents the need for tooth extraction and helps preserve your natural smile.\n\n Modern root canal procedures are virtually painless, thanks to advanced technology and local anesthesia. Most patients report feeling more relief than discomfort.",
     symptoms: [
       "Persistent toothache (especially while chewing or applying pressure)",
@@ -57,7 +57,7 @@ const serviceData = {
   },
   'scaling-polishing': {
     title: "Scaling & Polishing",
-    img: "/assets/images/dental-implant/scaling.jpg",
+    img: "/assets/images/services/scaling-polishing.jpg",
     brief: "Scaling and polishing is a preventive dental procedure designed to remove plaque, tartar (calculus), and stains from the teeth. It helps maintain healthy gums and a clean, fresh mouth. Even with regular brushing, tartar buildup in hard-to-reach areas can lead to gum problems and tooth decay.\n\nThis simple yet essential treatment is typically performed every 6 months and is key to maintaining long-term oral hygiene.",
     symptoms: [
       "Bleeding gums while brushing or flossing",
@@ -109,7 +109,7 @@ const serviceData = {
   },
   'teeth-whitening': {
     title: "Teeth Whitening (Professional Bleaching)",
-    img: "/assets/images/dental-implant/teeth-whitening.jpg",
+    img: "/assets/images/services/teeth-whitening.jpg",
     brief: "Professional teeth whitening, also known as dental bleaching, is a cosmetic procedure that lightens the natural color of your teeth by removing stains and discoloration. Unlike over-the-counter products, professional whitening is safer, faster, and far more effective — often producing visible results in a single session.\n\nWhether it's coffee, wine, tobacco, or just time that's dimmed your smile, this treatment is a popular way to restore brightness and confidence.",
     symptoms: [
       "Yellowed or stained teeth",
@@ -165,7 +165,7 @@ const serviceData = {
   },
   'extraction-wisdom': {
     title: "Tooth Extractions & Wisdom Tooth Surgery",
-    img: "/assets/images/dental-implant/extraction.jpg",
+    img: "/assets/images/services/teeth-extraction.jpg",
     brief: "Tooth extraction is the removal of a tooth from its socket in the jawbone, usually done when the tooth is too damaged, decayed, or infected to be saved. Wisdom tooth extraction, on the other hand, is a minor oral surgery performed when the third molars (wisdom teeth) grow improperly or cause pain, infection, or crowding.\n\nThese procedures are performed under local or general anesthesia to ensure a safe and pain-free experience. With modern techniques, recovery is quicker, and complications are minimal.",
     symptoms: [
       "Severe tooth decay or infection",
@@ -209,7 +209,7 @@ const serviceData = {
   },
   'composite-fillings': {
     title: "Tooth-Colored (Composite) Fillings",
-    img: "/assets/images/dental-implant/composite-filling.jpg",
+    img: "/assets/images/services/tooth-colored.jpg",
     brief: "Tooth-colored (composite) fillings are used to restore decayed, chipped, or damaged teeth while maintaining a natural, seamless appearance. Unlike traditional silver amalgam fillings, composite fillings blend perfectly with your natural tooth color, offering both strength and aesthetics.\n\nThey're made of a safe resin-based material and are ideal for visible areas like the front teeth — as well as small to moderate cavities in molars. Whether you're filling a new cavity or replacing an old filling, composite is the modern choice.",
     symptoms: [
       "You experience a sharp pain when eating or drinking something sweet, hot, or cold",
@@ -270,7 +270,7 @@ const serviceData = {
   },
   'single-visit-rct': {
     title: "Single Visit Root Canal Treatment",
-    img: "/assets/images/dental-implant/single-visit-rct.jpg",
+    img: "/assets/images/services/single-visit-rct.jpg",
     brief: "Single Visit Root Canal Treatment (RCT) is a modern, efficient procedure where the entire root canal therapy — including cleaning, shaping, disinfecting, and sealing the tooth — is completed in just one appointment.\n\nThis technique is ideal for patients with a busy schedule or those seeking quick pain relief. With advanced tools like rotary endodontics and digital imaging, the procedure is faster, precise, and less traumatic — often completed in 60–90 minutes.",
     symptoms: [
       "Sudden, intense tooth pain",
@@ -330,7 +330,7 @@ const serviceData = {
   },
   'crowns-bridges': {
     title: "Crowns & Bridges",
-    img: "/assets/images/dental-implant/crowns-bridges.jpg",
+    img: "/assets/images/services/crown-bridge2.jpg",
     brief: "Crowns and bridges are fixed prosthetic devices used to restore damaged, missing, or weak teeth. A dental crown acts as a cap placed over a damaged tooth to restore its shape, strength, and function. A bridge is used to replace one or more missing teeth by anchoring artificial teeth to adjacent natural teeth or implants.\n\nThese restorations not only enhance aesthetics but also improve chewing, speech, and bite alignment — making them an essential part of restorative dentistry.",
     symptoms: [
       "A broken, chipped, or severely worn-down tooth",
@@ -375,7 +375,7 @@ const serviceData = {
   },
   'smile-design': {
     title: "Smile Design Consultation",
-    img: "/assets/images/dental-implant/smile-design.jpg",
+    img: "/assets/images/services/smile-design.jpg",
     brief: "A Smile Design Consultation is the first step toward achieving the smile of your dreams. It involves a personalized assessment by a cosmetic dentist to evaluate your facial features, dental structure, and aesthetic goals. Using digital smile designing tools and expert analysis, your dentist will create a custom treatment plan to enhance the harmony, symmetry, and brightness of your smile.\n\nIt's not just about good-looking teeth — it's about creating a confident, natural smile that complements your personality and facial features.",
     symptoms: [
       "Uneven, crooked, or misaligned teeth",
@@ -432,7 +432,7 @@ const serviceData = {
   },
   'veneers': {
     title: "Porcelain Veneers / Cosmetic Veneers",
-    img: "/assets/images/dental-implant/veneers.jpg",
+    img: "/assets/images/services/veneers.jpg",
     brief: "Porcelain veneers, also known as cosmetic veneers, are ultra-thin, custom-made shells designed to cover the front surface of your teeth. They're an ideal solution for transforming smiles by correcting chips, stains, gaps, and misshapen teeth — delivering a flawless, natural-looking appearance.\n\nCrafted from high-quality porcelain or composite resin, veneers are stain-resistant, durable, and mimic the light-reflecting properties of real teeth. They're a popular choice among celebrities and professionals looking for a long-lasting, picture-perfect smile.",
     symptoms: [
       "Discolored or permanently stained teeth",
@@ -487,8 +487,8 @@ const serviceData = {
     ]
   },
   'braces-aligners': {
-    title: "Orthodontics (Braces & Clear Aligners)",
-    img: "/assets/images/dental-implant/braces-aligners.jpg",
+    title: "Braces & Clear Aligners",
+    img: "/assets/images/services/braces-aligners.jpg",
     brief: "Orthodontics is a specialized field of dentistry focused on diagnosing, preventing, and correcting misaligned teeth and jaws. Orthodontic treatment uses appliances like braces and clear aligners (Invisalign) to improve the alignment, function, and aesthetics of your teeth — giving you a healthier and more confident smile.\n\nFrom traditional metal braces to discreet, removable aligners, today's orthodontic options are more advanced, comfortable, and effective than ever before — for both kids and adults.",
     symptoms: [
       "Crooked or crowded teeth",
@@ -548,8 +548,8 @@ const serviceData = {
     ]
   },
   'gum-treatments': {
-    title: "Gum Treatments & Surgeries (Periodontal Therapy)",
-    img: "/assets/images/dental-implant/gum-treatments.jpg",
+    title: "Gum Treatments & Surgeries",
+    img: "/assets/images/services/gum-treatments.jpg",
     brief: "Gum treatments and surgeries, also known as periodontal therapy, focus on diagnosing and treating gum diseases that affect the tissues supporting your teeth. From non-surgical deep cleaning to advanced surgical procedures, these treatments are essential for preserving gum health, preventing tooth loss, and enhancing oral hygiene.\n\nHealthy gums are the foundation of a healthy smile — and periodontal care ensures your teeth have strong, disease-free support.",
     symptoms: [
       "Bleeding gums while brushing or flossing",
@@ -596,7 +596,7 @@ const serviceData = {
   },
   'implants': {
     title: "Dental Implants",
-    img: "/assets/images/dental-implant/implants.jpg",
+    img: "/assets/images/services/dental-implant.jpg",
     brief: "Dental implants are permanent, natural-looking replacements for missing teeth. Made from biocompatible titanium, the implant is surgically placed into the jawbone to function like a tooth root. A crown is then attached on top, restoring the tooth's function and aesthetics.\n\nDental implants are the gold standard for tooth replacement — providing durability, stability, and a long-term solution that feels and functions like your real teeth.",
     symptoms: [
       "One or more missing teeth",
@@ -653,7 +653,7 @@ const serviceData = {
   },
   'full-mouth-rehab': {
     title: "Full Mouth Reconstruction / Rehabilitation",
-    img: "/assets/images/dental-implant/full-mouth-rehab.jpg",
+    img: "/assets/images/services/full-mouth-recons.jpg",
     brief: "Full Mouth Reconstruction, also known as Full Mouth Rehabilitation, is a comprehensive treatment approach that restores the function, health, and aesthetics of your entire mouth. It is ideal for patients with multiple dental issues — such as broken, missing, worn-out, or decayed teeth — who need a complete transformation of their oral health and bite.\n\nThis treatment plan often combines restorative, cosmetic, and prosthetic dentistry to rebuild your smile from the ground up, improving your ability to chew, speak, and smile with confidence.",
     symptoms: [
       "Multiple missing or damaged teeth",
@@ -706,7 +706,7 @@ const serviceData = {
   },
   'dentures': {
     title: "Complete & Partial Dentures",
-    img: "/assets/images/dental-implant/dentures.jpg",
+    img: "/assets/images/services/dentures.jpg",
     brief: "Dentures are removable dental appliances used to replace missing teeth and surrounding tissues. Depending on how many teeth are missing, your dentist may recommend:\n\n<strong class='first-strong'>Complete Dentures</strong> – when all teeth are missing in the upper or lower arch.\n\n<strong>Partial Dentures</strong> – when some natural teeth remain and need support or gap-filling.\n\nToday's dentures are natural-looking, custom-designed, and more comfortable than ever. They not only restore your smile but also improve speech, chewing ability, and facial appearance.",
     symptoms: [
       "Complete or multiple missing teeth",
@@ -750,7 +750,7 @@ const serviceData = {
   },
   'pediatric': {
     title: "Pediatric Dentistry (Dental Care for Children)",
-    img: "/assets/images/dental-implant/pediatric.jpg",
+    img: "/assets/images/services/pediatric.jpg",
     brief: "Pediatric Dentistry focuses on the oral health of infants, children, and teenagers — including those with special needs. It involves preventive, diagnostic, and therapeutic dental care tailored to a child's growing teeth and jaw, while also helping them develop positive dental habits for life.\n\nFrom their first tooth to their teenage years, pediatric dentists ensure that every child's smile is healthy, strong, and confident — in a stress-free, child-friendly environment.",
     symptoms: [
       "Tooth pain or sensitivity",

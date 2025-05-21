@@ -219,7 +219,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
-    margin: var(--spacing-lg) 0 var(--spacing-xl);
+    margin: var(--spacing-lg) 0 0;
   }
   
   .services-faq-item {
@@ -349,7 +349,7 @@
     flex-direction: column;
   }
 
-  .cta {
+  .cta-left {
     /* text-align: center; */
     margin-top: var(--spacing-xl);
     /* border-radius: var(--radius-lg);
@@ -374,3 +374,35 @@
     color: var(--clr-text-secondary);
     margin-bottom: 1.5rem;
   }
+
+  /*  */
+  /* CTA Section */
+.cta {
+  color: var(--clr-text-primary);
+  text-align: center;
+  padding-block: 5rem;
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cta-box {
+  border: 2px solid rgba(92, 63, 56, 0.45);
+  background: var(--clr-bg-secondary);
+  border-radius: var(--radius-xl);
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  box-shadow: none;
+}

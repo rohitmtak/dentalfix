@@ -1,69 +1,84 @@
 // Review Plain Carousel Logic
 (function () {
-  const track = document.querySelector(".review-plain-track");
-  const cols = Array.from(document.querySelectorAll(".review-plain-col"));
-  const leftArrow = document.querySelector(".review-arrow-left");
-  const rightArrow = document.querySelector(".review-arrow-right");
-  const dotsContainer = document.querySelector(".review-dots");
+  // Function to initialize a carousel
+  function initCarousel(track, controlsContainer) {
+    if (!track || !controlsContainer) return;
 
-  let currentSlide = 0;
+    const cols = Array.from(track.querySelectorAll(".review-plain-col"));
+    const leftArrow = controlsContainer.querySelector(".review-arrow-left");
+    const rightArrow = controlsContainer.querySelector(".review-arrow-right");
+    const dotsContainer = controlsContainer.querySelector(".review-dots");
 
-  function getColsPerSlide() {
-    return window.innerWidth <= 900 ? 1 : 2;
-  }
+    if (!cols.length || !leftArrow || !rightArrow || !dotsContainer) return;
 
-  function getTotalSlides() {
-    return Math.ceil(cols.length / getColsPerSlide());
-  }
+    let currentSlide = 0;
 
-  function setWidths() {
-    const colsPerSlide = getColsPerSlide();
-    cols.forEach((col) => {
-      col.style.flex = `0 0 ${100 / colsPerSlide}%`;
-      col.style.maxWidth = `${100 / colsPerSlide - 5}%`;
-    });
-    track.style.width = "100%";
-  }
-
-  function updateDots() {
-    // Remove existing dots
-    dotsContainer.innerHTML = "";
-    const totalSlides = getTotalSlides();
-    for (let i = 0; i < totalSlides; i++) {
-      const dot = document.createElement("button");
-      dot.className = "review-dot";
-      dot.setAttribute("aria-label", `Go to slide ${i + 1}`);
-      if (i === currentSlide) dot.classList.add("active");
-      dot.addEventListener("click", () => {
-        updateSlide(i);
-      });
-      dotsContainer.appendChild(dot);
+    function getColsPerSlide() {
+      return window.innerWidth <= 900 ? 1 : 2;
     }
+
+    function getTotalSlides() {
+      return Math.ceil(cols.length / getColsPerSlide());
+    }
+
+    function setWidths() {
+      const colsPerSlide = getColsPerSlide();
+      cols.forEach((col) => {
+        col.style.flex = `0 0 ${100 / colsPerSlide}%`;
+        col.style.maxWidth = `${100 / colsPerSlide - 5}%`;
+      });
+      track.style.width = "100%";
+    }
+
+    function updateDots() {
+      // Remove existing dots
+      dotsContainer.innerHTML = "";
+      const totalSlides = getTotalSlides();
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement("button");
+        dot.className = "review-dot";
+        dot.setAttribute("aria-label", `Go to slide ${i + 1}`);
+        if (i === currentSlide) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          updateSlide(i);
+        });
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function updateSlide(newIndex) {
+      setWidths();
+      const colsPerSlide = getColsPerSlide();
+      const totalSlides = getTotalSlides();
+      currentSlide = Math.max(0, Math.min(newIndex, totalSlides - 1));
+      const percent = -(100 * currentSlide);
+      track.style.transform = `translateX(${percent}%)`;
+      updateDots();
+    }
+
+    leftArrow.addEventListener("click", () => {
+      updateSlide(currentSlide - 1);
+    });
+    rightArrow.addEventListener("click", () => {
+      updateSlide(currentSlide + 1);
+    });
+
+    window.addEventListener("resize", () => {
+      updateSlide(currentSlide);
+    });
+
+    // Initialize
+    updateSlide(0);
   }
 
-  function updateSlide(newIndex) {
-    setWidths();
-    const colsPerSlide = getColsPerSlide();
-    const totalSlides = getTotalSlides();
-    currentSlide = Math.max(0, Math.min(newIndex, totalSlides - 1));
-    const percent = -(100 * currentSlide);
-    track.style.transform = `translateX(${percent}%)`;
-    updateDots();
-  }
-
-  leftArrow.addEventListener("click", () => {
-    updateSlide(currentSlide - 1);
+  // Initialize all carousels on the page
+  document.querySelectorAll('.review-plain-slider').forEach(slider => {
+    const track = slider.querySelector('.review-plain-track');
+    const controls = slider.querySelector('.review-plain-controls, .review-plain-controls-invisalign');
+    if (track && controls) {
+      initCarousel(track, controls);
+    }
   });
-  rightArrow.addEventListener("click", () => {
-    updateSlide(currentSlide + 1);
-  });
-
-  window.addEventListener("resize", () => {
-    updateSlide(currentSlide);
-  });
-
-  // Init
-  updateSlide(0);
 })();
 
 // Custom
