@@ -1,0 +1,35 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Remove 'pages' from URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+pages/([^\s]+) [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Internally rewrite requests to the pages directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ pages/$1 [L]
+
+# Handle direct access to pages directory
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+pages/ [NC]
+RewriteRule ^pages/(.*)$ /$1 [R=301,L]
+
+# Custom error pages
+ErrorDocument 404 /404.html
+
+# Enable compression for better performance
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json
+</IfModule>
+
+# Set browser caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>

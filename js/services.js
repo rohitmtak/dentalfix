@@ -893,7 +893,27 @@ document.querySelectorAll(".services-list-item").forEach((item) => {
 });
 
 window.addEventListener("DOMContentLoaded", () => {
-  const firstKey = Object.keys(serviceData)[0];
-  const firstData = serviceData[firstKey];
-  renderServiceContent(firstData);
+  // Get category from URL if present
+  const urlParams = new URLSearchParams(window.location.search);
+  const categoryParam = urlParams.get('category');
+  
+  if (categoryParam && serviceData[categoryParam]) {
+    // If category exists in URL and is valid, select that category
+    const categoryItem = document.querySelector(`.services-list-item[data-category="${categoryParam}"]`);
+    if (categoryItem) {
+      // Remove active class from all items
+      document.querySelectorAll(".services-list-item.active").forEach((el) => {
+        el.classList.remove("active");
+      });
+      // Add active class to the matching item
+      categoryItem.classList.add("active");
+      // Render the content
+      renderServiceContent(serviceData[categoryParam]);
+    }
+  } else {
+    // Default to first category if no valid category in URL
+    const firstKey = Object.keys(serviceData)[0];
+    const firstData = serviceData[firstKey];
+    renderServiceContent(firstData);
+  }
 });
