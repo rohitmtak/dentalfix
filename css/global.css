@@ -270,7 +270,7 @@ a {
 
 .btn:hover {
   background-color: var(--clr-bg-btn-hover);
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
 }
 
 .btn:active {

@@ -94,7 +94,7 @@
   .services-title {
     font-size: var(--fs-4xl);
     font-weight: 600;
-    margin-bottom: var(--spacing-md);
+    /* margin-bottom: var(--spacing-md); */
     text-align: left;
     letter-spacing: -0.01em;
   }
@@ -104,7 +104,7 @@
     max-width: var(--services-img-max-width);
     border-radius: var(--services-img-radius);
     overflow: hidden;
-    margin-bottom: var(--spacing-lg);
+    /* margin-bottom: var(--spacing-lg); */
   }
   
   .services-img {
@@ -380,7 +380,6 @@
 .cta {
   color: var(--clr-text-primary);
   text-align: center;
-  padding-block: 5rem;
 }
 
 .cta h2 {
@@ -405,4 +404,6 @@
   padding: 3rem 2rem;
   box-sizing: border-box;
   box-shadow: none;
+  max-width: 1080px;
+  margin-inline: auto;
 }
