@@ -1141,11 +1141,11 @@
 }
 
 .modern-services-card-btn {
-  background: var(--clr-bg-btn);
-  color: var(--clr-bg-secondary);
+  background: transparent;
+  color: var(--clr-bg-btn);
   font-size: 1.08rem;
   font-weight: 600;
-  border: none;
+  border: 2px solid var(--clr-bg-btn);
   border-radius: 2rem;
   padding: 0.625rem 1.5rem;
   text-decoration: none;
