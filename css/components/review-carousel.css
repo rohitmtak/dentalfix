@@ -135,8 +135,8 @@
 }
 
 .review-arrow {
-  background: var(--clr-bg-btn);
-  border: none;
+  background: var(--clr-bg-secondary);
+  border: 1px solid #6666;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
@@ -146,15 +146,20 @@
   font-size: 1.1rem;
   color: var(--gray-700);
   cursor: pointer;
-  transition: all 0.2s ease;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.review-arrow:hover {
-  background: var(--clr-bg-btn);
-  color: var(--clr-white);
-  border-color: var(--clr-bg-btn);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+.review-arrow > i {
+  transition: transform 0.2s ease;
+}
+
+
+.review-arrow.review-arrow-left:hover > i {
+  transform: translateX(-4px);
+}
+
+.review-arrow.review-arrow-right:hover > i {
+  transform: translateX(4px);
 }
 
 @media (max-width: 900px) {

@@ -357,7 +357,6 @@
 .cta {
   color: var(--clr-text-primary);
   text-align: center;
-  padding-block: 5rem;
 }
 
 .cta h2 {
@@ -382,6 +381,8 @@
   padding: 3rem 2rem;
   box-sizing: border-box;
   box-shadow: none;
+  max-width: 1080px;
+  margin-inline: auto;
 }
 
 /* Responsive Design */

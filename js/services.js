@@ -509,11 +509,11 @@ const serviceData = {
       },
       {
         step: "Braces",
-        detail: "Metal or ceramic brackets are bonded to teeth.<br>Archwires are threaded through the brackets to apply gentle pressure.<br>Periodic adjustments are done to guide the teeth into position."
+        detail: "- Metal or ceramic brackets are bonded to teeth.<br>- Archwires are threaded through the brackets to apply gentle pressure.<br>- Periodic adjustments are done to guide the teeth into position."
       },
       {
         step: "Clear Aligners (Invisalign)",
-        detail: "A series of custom-made, transparent aligners are worn for 22 hours a day.<br>Each set is changed every 1–2 weeks.<br>They are removable, making them convenient for eating and cleaning."
+        detail: "- A series of custom-made, transparent aligners are worn for 22 hours a day.<br>- Each set is changed every 1–2 weeks.<br>- They are removable, making them convenient for eating and cleaning."
       },
       {
         step: "Step 3: Follow-ups & Adjustments",
@@ -674,7 +674,7 @@ const serviceData = {
       },
       {
         step: "Step 3: Execution of the Plan",
-        detail: "Depending on your case, the following treatments may be included:<br><ul><li>Root canal treatments</li><li>Dental implants or bridges for missing teeth</li><li>Crowns and veneers to restore damaged teeth</li><li>Gum treatments for periodontal issues</li><li>Orthodontics (braces or aligners) to realign bite</li><li>Occlusal adjustment for jaw alignment</li><li>Temporary restorations before permanent placements</li></ul>"
+        detail: "<span style='font-weight: 500;'>Depending on your case, the following treatments may be included:</span><br><ul style='color: var(--clr-text-secondary)'><li>- Root canal treatments</li><li>- Dental implants or bridges for missing teeth</li><li>- Crowns and veneers to restore damaged teeth</li><li>- Gum treatments for periodontal issues</li><li>- Orthodontics (braces or aligners) to realign bite</li><li>- Occlusal adjustment for jaw alignment</li><li>- Temporary restorations before permanent placements</li></ul>"
       },
       {
         step: "Step 4: Final Restoration and Bite Balancing",

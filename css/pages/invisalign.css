@@ -1,3 +1,13 @@
+/* Registered mark fix */
+.reg-mark {
+  display: inline;
+  transform: none !important;
+  font-style: normal;
+  font-family: Arial, sans-serif;
+  direction: ltr;
+  font-size: 40%;
+}
+
 .invis-section {
   padding-block: var(--spacing-2xl);
 }
@@ -23,107 +33,10 @@
    1. HERO  (class names: .invis-hero, etc.)
 ===================================================================== */
 
-/* .invis-hero {
-  background: var(--clr-bg);
-  color: var(--clr-text);
-  padding-block: var(--spacing-2xl);
+.hero-sub-heading {
+  max-width: 500px;
+  font-size: 1.25rem;
 }
-
-.hero-layout {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-lg);
-}
-
-@media (min-width: 992px) {
-  .hero-layout {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .hero-content {
-    flex: 1 1 0;
-    max-width: 540px;
-    margin-right: var(--spacing-xl);
-    order: 1;
-  }
-  .hero-visual {
-    flex: 1 1 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    min-width: 340px;
-    max-width: 520px;
-    order: 2;
-  }
-  .hero-img {
-    width: 100%;
-    max-width: 420px;
-    height: auto;
-    min-height: 320px;
-    max-height: 480px;
-    object-fit: cover;
-    border-radius: var(--radius-lg);
-    box-shadow: 0 12px 28px rgb(0 0 0 / 0.12);
-    display: block;
-  }
-}
-
-.hero-visual {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 12px 28px rgb(0 0 0 / 0.12);
-  display: block;
-}
-
-.gold-badge {
-  margin-top: var(--spacing-sm);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.hero-title {
-  font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
-  margin-bottom: var(--spacing-lg);
-  line-height: 1.2;
-}
-
-.provider-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-lg);
-}
-
-.hero-invisalign-provider,
-.hero-smiles-transformed {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-  font-weight: 600;
-  font-size: var(--fs-sm);
-}
-
-.provider-badge {
-  height: 28px;
-}
-
-.hero-cta-btn {
-  margin-top: var(--spacing-sm);
-} */
 
 /* =====================================================================
    2. WHY  INVISALIGN  (grid of coloured cards)
@@ -289,6 +202,12 @@
 .expertise-main-img {
   border-radius: var(--radius-md);
 }
+.expertise-image {
+  width: 100%;
+}
+.expertise-img {
+  width: 100%;
+}
 
 /* Doctor profile row */
 .doctor-card {
@@ -422,6 +341,7 @@
 .commitment-heading {
   font-size: var(--fs-5xl);
   margin-bottom: var(--spacing-lg);
+  line-height: 1.15;
 }
 
 .commitment-text {
@@ -646,6 +566,15 @@
 
 .swiper-slide-active.hero-slide {
   opacity: 1 !important;
+}
+
+.hero-img-wrap.hero-img1::before {
+  background-image: linear-gradient(270deg, white 0%, #fff0 50%);
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-img-wrap {
@@ -1182,7 +1111,6 @@
   color: var(--clr-text-primary);
   text-align: center;
   background-color: var(--clr-bg-secondary);
-  padding-block: 5rem;
 }
 
 .cta h2 {
@@ -1207,4 +1135,6 @@
   padding: 3rem 2rem;
   box-sizing: border-box;
   box-shadow: none;
+  max-width: 1080px;
+  margin-inline: auto;
 }
