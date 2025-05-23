@@ -1127,8 +1127,8 @@
 }
 
 .modern-services-icon-img {
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 .modern-services-card-title {
@@ -1149,11 +1149,11 @@
 .modern-services-card-btn {
   background: transparent;
   color: var(--clr-text-primary);
-  font-size: 1.08rem;
+  font-size: 1rem;
   font-weight: 600;
-  border: 2px solid var(--clr-bg-btn);
+  border: 2px solid var(--clr-text-primary);
   border-radius: 2rem;
-  padding: 0.625rem 1.5rem;
+  padding: 0.625rem 1rem;
   text-decoration: none;
   transition: transform 0.18s;
   box-shadow: 0 1px 4px 0 rgba(23, 99, 106, 0.04);
